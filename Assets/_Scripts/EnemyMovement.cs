@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class EnemyMovement : MonoBehaviour
 {
     NavMeshAgent agent;
@@ -13,7 +14,6 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        SetTargetPosition(GameObject.Find("player").transform.position);
     }
 
     public void SetTargetPosition(Vector3 pos)
@@ -46,10 +46,9 @@ public class EnemyMovement : MonoBehaviour
             foreach (var t in PatrolRoute)
             {
                 var dist = Vector3.Distance(transform.position, t.position);
-                if (dist < 0.2f)
+                if (dist < 0.3f)
                 {
                     minDistance = dist;
-                    index++;
                     break;
                 }
                 else if (dist < minDistance)
@@ -69,7 +68,7 @@ public class EnemyMovement : MonoBehaviour
 
         //if arrived start patrol, move to next
         //if patrolling go to next point until touching and then go to next
-        if (minDistance < 0.2)
+        if (minDistance < 0.3)
         {
             if (PatrolRouteIndex == -1)
                 PatrolRouteIndex = index;
