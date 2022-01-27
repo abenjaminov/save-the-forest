@@ -8,9 +8,36 @@
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
           <e p="Behaviours" t="Include">
+            <e p="InputHandler.cs" t="Include" />
             <e p="ObjectTransparencyHandler.cs" t="Include" />
           </e>
+          <e p="Input" t="Include">
+            <e p="InputManager.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="States" t="Include">
+              <e p="PlayerIdleState.cs" t="Include" />
+              <e p="PlayerStateBase.cs" t="Include" />
+              <e p="PlayerStates.cs" t="Include" />
+            </e>
+          </e>
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="ScriptableObjects" t="Include">
+            <e p="Channels" t="Include">
+              <e p="Input" t="Include">
+                <e p="InputChannel.cs" t="Include" />
+                <e p="Models" t="Include">
+                  <e p="InputActionOptions.cs" t="Include" />
+                  <e p="InputActionTypes.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="State" t="Include">
+            <e p="IState.cs" t="Include" />
+            <e p="StateMachine.cs" t="Include" />
+            <e p="Transition.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Library" t="Include">
