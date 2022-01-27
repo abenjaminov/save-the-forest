@@ -8,6 +8,8 @@
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="ScripteableObjects" t="Include" />
+          <e p="States" t="Include" />
         </e>
       </e>
       <e p="Library" t="Include">
