@@ -12,12 +12,11 @@ namespace _Scripts.Player.States
         private StateMachine _StateMachine;
 
         private PlayerIdleState _idleState;
+        private PlayerMoveState _moveState;
 
         private PlayerMovement _playerMovement;
         private Animator _animator;
 
-        private Vector2 _movementDirection;
-        
         private void Awake()
         {
             _StateMachine = new StateMachine();
@@ -29,16 +28,18 @@ namespace _Scripts.Player.States
 
         private void OnMoveAction(InputActionOptions options)
         {
-            _movementDirection = options.MovementDirection;
+            _moveState.MovementDirection = options.MovementDirection;
         }
 
         private void Start()
         {
             _idleState = new PlayerIdleState(_animator, _playerMovement);
 
-            var shouldIdle = new Func<bool>(() => _movementDirection == Vector2.zero);
+            var shouldIdle = new Func<bool>(() => _moveState.MovementDirection == Vector2.zero);
+            var shouldMove = new Func<bool>(() => _moveState.MovementDirection != Vector2.zero);
             
             _StateMachine.AddTransition(_idleState, shouldIdle);     
+            _StateMachine.AddTransition(_moveState, shouldMove, _idleState);
         }
     }
 }
