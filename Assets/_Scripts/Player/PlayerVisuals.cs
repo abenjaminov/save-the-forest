@@ -31,8 +31,6 @@ namespace _Scripts.Player
             ShapesMap.Add(PlayerShape.Rabbit, RabbitVisuals);
 
             _currentVisuals = ShapesMap[CurrentShape];
-            
-            ChangeShape(CurrentShape);
         }
 
         public void ChangeShape(PlayerShape shape)
@@ -42,21 +40,6 @@ namespace _Scripts.Player
             ShapesMap[CurrentShape].SetActive(false);
             CurrentShape = shape;
             ShapesMap[CurrentShape].SetActive(true);
-            
-            switch (shape)
-            {
-                case PlayerShape.Human:
-                    _currentVisuals = HumanVisuals;
-                    break;
-                case PlayerShape.Bear:
-                    _currentVisuals = BearVisuals;
-                    break;
-                case PlayerShape.Rabbit:
-                    _currentVisuals = RabbitVisuals;
-                    break;
-            }
-            
-            _currentVisuals.SetActive(true);
         }
     }
 }

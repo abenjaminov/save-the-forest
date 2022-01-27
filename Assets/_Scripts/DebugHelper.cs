@@ -15,10 +15,22 @@ namespace _Scripts
             HelperInstance = this;
         }
 
+        [UnityEditor.MenuItem("Game Actions/Shape Shift/Human")]
+        public static void ChangeToHuman()
+        { 
+            HelperInstance._PlayerChannel.OnPlayerChangeShape(PlayerShape.Human);
+        }
+        
         [UnityEditor.MenuItem("Game Actions/Shape Shift/Bear")]
         public static void ChangeToBear()
         { 
             HelperInstance._PlayerChannel.OnPlayerChangeShape(PlayerShape.Bear);
+        }
+        
+        [UnityEditor.MenuItem("Game Actions/Shape Shift/Rabbit")]
+        public static void ChangeToRabbit()
+        { 
+            HelperInstance._PlayerChannel.OnPlayerChangeShape(PlayerShape.Rabbit);
         }
     }
 }
