@@ -5,6 +5,7 @@ namespace _Scripts.Player.States
 {
     public enum PlayerAnimationState
     {
+        None,
         Idle,
         Run,
         Jump

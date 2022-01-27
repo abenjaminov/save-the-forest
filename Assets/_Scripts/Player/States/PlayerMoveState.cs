@@ -17,7 +17,7 @@ namespace _Scripts.Player.States
             return PlayerAnimationState.Run;
         }
 
-        public override void Tick()
+        public override void Tick() 
         {
             _PlayerMovement.Move(MovementDirection);
         }
