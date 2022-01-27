@@ -23,21 +23,20 @@ namespace _Scripts.Behaviours
         {
             var firstEdgePosition = _firstEdge.position;
             var secondEdgePosition = _secondEdge.position;
-            
-            
-            var direction = secondEdgePosition - firstEdgePosition;
-            var ray = new Ray(firstEdgePosition, direction);
-            Debug.DrawRay(firstEdgePosition, direction, Color.black);
-            var hits = Physics.RaycastAll(firstEdgePosition, direction, Vector3.Distance(secondEdgePosition, firstEdgePosition));
+
+            var direction = (secondEdgePosition - firstEdgePosition).normalized;
 
             if (_objectsBetween.Count > 0)
             {
                 _objectsBetween.ForEach(x => x.material.SetFloat(s_Transparency, 1));
             }
             
-            if (hits.Length > 0)
+            var hits = new RaycastHit[100];
+            var size = Physics.RaycastNonAlloc(firstEdgePosition, direction, hits, Vector3.Distance(secondEdgePosition, firstEdgePosition));
+            
+            if (size > 0)
             {
-                _objectsBetween = hits.Select(x => x.collider.GetComponent<Renderer>()).ToList();
+                _objectsBetween = hits.Where(x => x.collider != null).Select(x => x.collider.GetComponent<Renderer>()).ToList();
                 _objectsBetween.ForEach(x => x.material.SetFloat(s_Transparency, _transparency));
             }
         }
