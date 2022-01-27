@@ -8,13 +8,13 @@ namespace _Scripts
     {
         [SerializeField] float moveSpeed = 5f;
         [SerializeField] float jumpSpeed = 10f;
-        private float actualMoveSpeed;
+        private float horizontalSpeed;
+        private float verticalSpeed;
         CharacterController characterController;
 
         Vector3 playerMovment;
 
-        float gravity = 9.81f;
-        float groundedGravity = 0.05f;
+        float gravity = 20f;
 
         float distanceGround;
         bool isGrounded = false;
@@ -22,14 +22,14 @@ namespace _Scripts
         private void Awake()
         {
             characterController = GetComponent<CharacterController>();
-            actualMoveSpeed = 0;
+            horizontalSpeed = 0;
 
             distanceGround = GetComponent<Collider>().bounds.extents.y;
         }
         
         private void Update()
         {
-            HandleGravity();
+            //HandleGravity();
             Move();
         }
 
@@ -47,41 +47,37 @@ namespace _Scripts
 
         private void Move()
         {
-            var moveDirection = new Vector3(playerMovment.x, playerMovment.y, playerMovment.z);
+            playerMovment.Normalize();
 
+            if (!isGrounded && verticalSpeed >= -gravity)
+            {
+                verticalSpeed -= gravity * Time.deltaTime;
+            }
+
+            var moveDirection = new Vector3(playerMovment.x * horizontalSpeed, 
+                                            verticalSpeed, 
+                                            playerMovment.z * horizontalSpeed);
             var targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
-            characterController.Move(moveDirection * actualMoveSpeed * Time.deltaTime);
-        }
-
-        private void HandleGravity()
-        {
-            if (isGrounded)
-            {
-                playerMovment.y -= groundedGravity;
-            }
-            else
-            {
-                playerMovment.y -= gravity;
-            }
+            characterController.Move(moveDirection  * Time.deltaTime);
         }
         
         public void Idle()
         {
-            actualMoveSpeed = 0;
+            horizontalSpeed = 0;
         }
 
         public void Move(Vector2 direction)
         {
-            actualMoveSpeed = moveSpeed;
+            horizontalSpeed = moveSpeed;
             playerMovment.x = direction.x;
             playerMovment.z = direction.y;
         }
 
         public void Jump()
         {
-            playerMovment.y = jumpSpeed;
+            verticalSpeed = jumpSpeed;
         }
 
         public bool IsGrounded()
