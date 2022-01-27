@@ -72,13 +72,15 @@ namespace _Scripts.Player.States
 
             _StateMachine.AddTransition(_moveState, shouldMove, _idleState, transitionName: "From Idle To Moving State");
             _StateMachine.AddTransition(_moveState, shouldMove, _jumpState, transitionName: "From Jump To Moving State");
+            _StateMachine.AddTransition(_moveState, shouldMove, _changeShapeState, transitionName: "From Jump To Moving State");
 
             _StateMachine.AddTransition(_idleState, shouldIdle, _moveState, transitionName: "From Move To Idle State");
             _StateMachine.AddTransition(_idleState, shouldIdle, _jumpState, transitionName: "From Jump To Idle State");
+            _StateMachine.AddTransition(_idleState, shouldIdle, _changeShapeState, transitionName: "From Jump To Idle State");
 
             _StateMachine.SetState(_idleState);
             
-            var shouldShapeShift = new Func<bool>(() => /*IsGrounded &&*/_PlayerVisuals.CurrentShape != _changeShapeState.Shape);
+            var shouldShapeShift = new Func<bool>(() => _PlayerVisuals.CurrentShape != _changeShapeState.Shape);
             
             _StateMachine.AddTransition(_changeShapeState, shouldShapeShift, _idleState);
             _StateMachine.AddTransition(_changeShapeState, shouldShapeShift, _moveState);
