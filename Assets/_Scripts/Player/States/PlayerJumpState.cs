@@ -6,7 +6,7 @@ namespace _Scripts.Player.States
     {
         private PlayerMovement _PlayerMovement;
         
-        public PlayerJumpState(Animator animator, PlayerMovement playerMovement) : base(animator)
+        public PlayerJumpState(AnimatorController animator, PlayerMovement playerMovement) : base(animator)
         {
             _PlayerMovement = playerMovement;
         }
