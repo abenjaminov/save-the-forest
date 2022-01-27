@@ -28,7 +28,7 @@ namespace _Scripts.Player.States
         public virtual void OnEnter()
         {
             if (_animator == null) return;
-            
+
             _animator.SetInteger(s_State, (int)GetAnimationState());
         }
 
