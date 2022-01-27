@@ -15,6 +15,8 @@ namespace _Scripts.Player.States
 
         private PlayerMovement _playerMovement;
         private Animator _animator;
+
+        private Vector2 _movementDirection;
         
         private void Awake()
         {
@@ -22,17 +24,21 @@ namespace _Scripts.Player.States
             _playerMovement = GetComponent<PlayerMovement>();
             _animator = GetComponentInChildren<Animator>();
 
-            _inputchannel.SubscribeAction(InputActionTypes.Move, OnInputAction);
+            _inputchannel.SubscribeAction(InputActionTypes.Move, OnMoveAction);
         }
 
-        private void OnInputAction(InputActionOptions options)
+        private void OnMoveAction(InputActionOptions options)
         {
-            
+            _movementDirection = options.MovementDirection;
         }
 
         private void Start()
         {
             _idleState = new PlayerIdleState(_animator, _playerMovement);
+
+            var shouldIdle = new Func<bool>(() => _movementDirection == Vector2.zero);
+            
+            _StateMachine.AddTransition(_idleState, shouldIdle);     
         }
     }
 }
