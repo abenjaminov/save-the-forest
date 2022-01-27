@@ -7,27 +7,64 @@ namespace _Scripts
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] float moveSpeed = 5f;
+        [SerializeField] float jumpSpeed = 10f;
         private float actualMoveSpeed;
-        Vector2 movementDirection;
         CharacterController characterController;
+
+        Vector3 playerMovment;
+
+        float gravity = 9.81f;
+        float groundedGravity = 0.05f;
+
+        float distanceGround;
+        bool isGrounded = false;
 
         private void Awake()
         {
             characterController = GetComponent<CharacterController>();
             actualMoveSpeed = 0;
+
+            distanceGround = GetComponent<Collider>().bounds.extents.y;
         }
         
         private void Update()
         {
+            HandleGravity();
             Move();
+        }
+
+        private void FixedUpdate()
+        {
+            if (!Physics.Raycast(transform.position, -Vector3.up, distanceGround + 0.1f))
+            {
+                isGrounded = false;
+            }
+            else
+            {
+                isGrounded = true;
+            }
         }
 
         private void Move()
         {
-            var positionDelta = new Vector3(movementDirection.x, 0, movementDirection.y) * actualMoveSpeed * Time.deltaTime;
-            var targetAngle = Mathf.Atan2(positionDelta.x, positionDelta.z) * Mathf.Rad2Deg;
+            var moveDirection = new Vector3(playerMovment.x, playerMovment.y, playerMovment.z);
+
+            var targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
-            characterController.Move(positionDelta);
+
+            characterController.Move(moveDirection * actualMoveSpeed * Time.deltaTime);
+        }
+
+        private void HandleGravity()
+        {
+            if (isGrounded)
+            {
+                playerMovment.y -= groundedGravity;
+            }
+            else
+            {
+                playerMovment.y -= gravity;
+            }
         }
         
         public void Idle()
@@ -38,7 +75,18 @@ namespace _Scripts
         public void Move(Vector2 direction)
         {
             actualMoveSpeed = moveSpeed;
-            movementDirection = direction;
+            playerMovment.x = direction.x;
+            playerMovment.z = direction.y;
+        }
+
+        public void Jump()
+        {
+            playerMovment.y = jumpSpeed;
+        }
+
+        public bool IsGrounded()
+        {
+            return isGrounded;
         }
     }
 }

@@ -6,7 +6,8 @@ namespace _Scripts.Player.States
     public enum PlayerAnimationState
     {
         Idle,
-        Run
+        Run,
+        Jump
     }
     
     public abstract class PlayerStateBase :IState

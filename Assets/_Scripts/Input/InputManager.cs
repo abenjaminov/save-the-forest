@@ -11,13 +11,17 @@ namespace _Scripts.Input
 
         void OnMove(InputValue inputValue)
         {
-            Debug.Log("Hello");
             var inputOptions = new InputActionOptions()
             {
                 MovementDirection = inputValue.Get<Vector2>()
             };
             
             _inputChannel.OnAction(InputActionTypes.Move, inputOptions);
+        }
+
+        void OnJump(InputValue inputValue)
+        {
+            _inputChannel.OnAction(InputActionTypes.Jump, null);
         }
     }
 }
