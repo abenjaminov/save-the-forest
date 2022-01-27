@@ -25,7 +25,7 @@ namespace _Scripts.Player.States
 
         private void Awake()
         {
-            _StateMachine = new StateMachine(true);
+            _StateMachine = new StateMachine();
             _playerMovement = GetComponent<PlayerMovement>();
             _animator = GetComponentInChildren<Animator>();
             _PlayerVisuals = GetComponent<PlayerVisuals>();
@@ -64,13 +64,17 @@ namespace _Scripts.Player.States
             _StateMachine.AddTransition(_jumpState, shouldJump, _idleState, () =>
             {
                 _isJumpPressed = false;
-            },"To Jumping State");
-            
-            _StateMachine.AddTransition(_moveState, shouldMove, _idleState, transitionName: "To Moving State");
-            _StateMachine.AddTransition(_moveState, shouldMove, _jumpState, transitionName: "To Moving State");
+            },"From Idle To Jumping State");
+            _StateMachine.AddTransition(_jumpState, shouldJump, _moveState, () =>
+            {
+                _isJumpPressed = false;
+            }, "From Move To Jumping State");
 
-            _StateMachine.AddTransition(_idleState, shouldIdle, _moveState, transitionName: "To Idle State");
-            _StateMachine.AddTransition(_idleState, shouldIdle, _jumpState, transitionName: "To Idle State");
+            _StateMachine.AddTransition(_moveState, shouldMove, _idleState, transitionName: "From Idle To Moving State");
+            _StateMachine.AddTransition(_moveState, shouldMove, _jumpState, transitionName: "From Jump To Moving State");
+
+            _StateMachine.AddTransition(_idleState, shouldIdle, _moveState, transitionName: "From Move To Idle State");
+            _StateMachine.AddTransition(_idleState, shouldIdle, _jumpState, transitionName: "From Jump To Idle State");
 
             _StateMachine.SetState(_idleState);
             
