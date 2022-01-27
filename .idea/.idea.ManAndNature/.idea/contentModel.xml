@@ -11,12 +11,14 @@
             <e p="InputHandler.cs" t="Include" />
             <e p="ObjectTransparencyHandler.cs" t="Include" />
           </e>
+          <e p="EnemyMovement.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="States" t="Include">
               <e p="PlayerIdleState.cs" t="Include" />
+              <e p="PlayerMoveState.cs" t="Include" />
               <e p="PlayerStateBase.cs" t="Include" />
               <e p="PlayerStates.cs" t="Include" />
             </e>

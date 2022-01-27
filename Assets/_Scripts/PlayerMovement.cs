@@ -7,13 +7,16 @@ namespace _Scripts
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] float moveSpeed = 5f;
-        Vector2 playerInput;
+        private float actualMoveSpeed;
+        Vector2 movementDirection;
         CharacterController characterController;
 
         private void Awake()
         {
             characterController = GetComponent<CharacterController>();
+            actualMoveSpeed = 0;
         }
+        
         private void Update()
         {
             Move();
@@ -21,21 +24,21 @@ namespace _Scripts
 
         private void Move()
         {
-            Vector3 positionDelta = new Vector3(playerInput.x, 0, playerInput.y) * moveSpeed * Time.deltaTime;
-            float targetAngle = Mathf.Atan2(positionDelta.x, positionDelta.z) * Mathf.Rad2Deg;
+            var positionDelta = new Vector3(movementDirection.x, 0, movementDirection.y) * actualMoveSpeed * Time.deltaTime;
+            var targetAngle = Mathf.Atan2(positionDelta.x, positionDelta.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
             characterController.Move(positionDelta);
         }
-
-        void OnMove(InputValue inputValue)
+        
+        public void Idle()
         {
-            playerInput = inputValue.Get<Vector2>();
-            
+            actualMoveSpeed = 0;
         }
 
-        public void SetSpeed(float speed)
+        public void Move(Vector2 direction)
         {
-            moveSpeed = speed;
+            actualMoveSpeed = moveSpeed;
+            movementDirection = direction;
         }
     }
 }
