@@ -30,5 +30,10 @@ namespace _Scripts
             playerInput = inputValue.Get<Vector2>();
             
         }
+
+        public void SetSpeed(float speed)
+        {
+            moveSpeed = speed;
+        }
     }
 }

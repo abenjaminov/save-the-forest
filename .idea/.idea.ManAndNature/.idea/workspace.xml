@@ -19,7 +19,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="" />
+    <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/InputHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/InputHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Input.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Input/InputManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Input/InputManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerIdleState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerIdleState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActionOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActionOptions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActionTypes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActionTypes.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/State.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/State/IState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/State/IState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/State/StateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/State/StateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/State/Transition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/State/Transition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Shaders/TransparentShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Shaders/TransparentShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,11 +63,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.2.0/InputSystem/Plugins/PlayerInput/InputValue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DDD0E5B8-B70F-4121-B171-24414B1C6BB1/1b/795885f3/InputActionType.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/State/IState.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/State/Transition.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/State/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerState.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerIdleState.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActions.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActionOptions.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Input/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs" />
       </list>
     </option>
   </component>
@@ -58,10 +109,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4572">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4572" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -76,7 +127,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643307766139</updated>
-      <workItem from="1643307794860" duration="5144000" />
+      <workItem from="1643307794860" duration="6472000" />
+      <workItem from="1643315190929" duration="2069000" />
     </task>
     <servers />
   </component>
@@ -95,6 +147,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -104,70 +157,74 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="391" height="436" key="DebuggerActiveHint/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312789144" />
-    <state width="1237" height="120" key="GridCell.Tab.0.bottom" timestamp="1643312991939">
+    <state width="1237" height="120" key="GridCell.Tab.0.bottom" timestamp="1643315156878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.0.bottom/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991939" />
-    <state width="1237" height="120" key="GridCell.Tab.0.center" timestamp="1643312991938">
+    <state width="1237" height="120" key="GridCell.Tab.0.bottom/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156878" />
+    <state width="1237" height="120" key="GridCell.Tab.0.center" timestamp="1643315156877">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.0.center/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991938" />
-    <state width="1237" height="120" key="GridCell.Tab.0.left" timestamp="1643312991938">
+    <state width="1237" height="120" key="GridCell.Tab.0.center/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156877" />
+    <state width="1237" height="120" key="GridCell.Tab.0.left" timestamp="1643315156877">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.0.left/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991938" />
-    <state width="1237" height="120" key="GridCell.Tab.0.right" timestamp="1643312991938">
+    <state width="1237" height="120" key="GridCell.Tab.0.left/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156877" />
+    <state width="1237" height="120" key="GridCell.Tab.0.right" timestamp="1643315156878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.0.right/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991938" />
-    <state width="1237" height="120" key="GridCell.Tab.1.bottom" timestamp="1643312991939">
+    <state width="1237" height="120" key="GridCell.Tab.0.right/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156878" />
+    <state width="1237" height="120" key="GridCell.Tab.1.bottom" timestamp="1643315156878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.1.bottom/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991939" />
-    <state width="1237" height="120" key="GridCell.Tab.1.center" timestamp="1643312991939">
+    <state width="1237" height="120" key="GridCell.Tab.1.bottom/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156878" />
+    <state width="1237" height="120" key="GridCell.Tab.1.center" timestamp="1643315156878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.1.center/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991939" />
-    <state width="1237" height="120" key="GridCell.Tab.1.left" timestamp="1643312991939">
+    <state width="1237" height="120" key="GridCell.Tab.1.center/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156878" />
+    <state width="1237" height="120" key="GridCell.Tab.1.left" timestamp="1643315156878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.1.left/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991939" />
-    <state width="1237" height="120" key="GridCell.Tab.1.right" timestamp="1643312991939">
+    <state width="1237" height="120" key="GridCell.Tab.1.left/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156878" />
+    <state width="1237" height="120" key="GridCell.Tab.1.right" timestamp="1643315156878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.1.right/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991939" />
-    <state width="1237" height="120" key="GridCell.Tab.2.bottom" timestamp="1643312991940">
+    <state width="1237" height="120" key="GridCell.Tab.1.right/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156878" />
+    <state width="1237" height="120" key="GridCell.Tab.2.bottom" timestamp="1643315156879">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.2.bottom/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991940" />
-    <state width="1237" height="120" key="GridCell.Tab.2.center" timestamp="1643312991940">
+    <state width="1237" height="120" key="GridCell.Tab.2.bottom/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156879" />
+    <state width="1237" height="120" key="GridCell.Tab.2.center" timestamp="1643315156879">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.2.center/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991940" />
-    <state width="1237" height="120" key="GridCell.Tab.2.left" timestamp="1643312991940">
+    <state width="1237" height="120" key="GridCell.Tab.2.center/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156879" />
+    <state width="1237" height="120" key="GridCell.Tab.2.left" timestamp="1643315156878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.2.left/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991940" />
-    <state width="1237" height="120" key="GridCell.Tab.2.right" timestamp="1643312991940">
+    <state width="1237" height="120" key="GridCell.Tab.2.left/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156878" />
+    <state width="1237" height="120" key="GridCell.Tab.2.right" timestamp="1643315156879">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.2.right/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991940" />
-    <state width="1237" height="120" key="GridCell.Tab.3.bottom" timestamp="1643312991940">
+    <state width="1237" height="120" key="GridCell.Tab.2.right/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156879" />
+    <state width="1237" height="120" key="GridCell.Tab.3.bottom" timestamp="1643315156879">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.3.bottom/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991940" />
-    <state width="1237" height="120" key="GridCell.Tab.3.center" timestamp="1643312991940">
+    <state width="1237" height="120" key="GridCell.Tab.3.bottom/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156879" />
+    <state width="1237" height="120" key="GridCell.Tab.3.center" timestamp="1643315156879">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.3.center/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991940" />
-    <state width="1237" height="120" key="GridCell.Tab.3.left" timestamp="1643312991940">
+    <state width="1237" height="120" key="GridCell.Tab.3.center/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156879" />
+    <state width="1237" height="120" key="GridCell.Tab.3.left" timestamp="1643315156879">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.3.left/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991940" />
-    <state width="1237" height="120" key="GridCell.Tab.3.right" timestamp="1643312991940">
+    <state width="1237" height="120" key="GridCell.Tab.3.left/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156879" />
+    <state width="1237" height="120" key="GridCell.Tab.3.right" timestamp="1643315156879">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="120" key="GridCell.Tab.3.right/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643312991940" />
+    <state width="1237" height="120" key="GridCell.Tab.3.right/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643315156879" />
+    <state x="474" y="42" key="RiderGenerateDialog" timestamp="1643316300725">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="474" y="42" key="RiderGenerateDialog/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643316300725" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
