@@ -13,10 +13,10 @@ namespace _Scripts.Player.States
     
     public abstract class PlayerStateBase :IState
     {
-        protected Animator _animator;
+        protected AnimatorController _animator;
         private static readonly int s_State = Animator.StringToHash("_State");
 
-        protected PlayerStateBase(Animator animator)
+        protected PlayerStateBase(AnimatorController animator)
         {
             _animator = animator;
         }
@@ -27,9 +27,9 @@ namespace _Scripts.Player.States
 
         public virtual void OnEnter()
         {
-            if (_animator == null) return;
+            if (!_animator.HasAnimator()) return;
 
-            _animator.SetInteger(s_State, (int)GetAnimationState());
+            _animator.Getanimator().SetInteger(s_State, (int)GetAnimationState());
         }
 
         public abstract void OnExit();

@@ -20,7 +20,7 @@ namespace _Scripts.Player.States
         
         private PlayerMovement _playerMovement;
         private PlayerVisuals _PlayerVisuals;
-        private Animator _animator;
+        private AnimatorController _animator;
         private bool _isGrounded;
         private bool _isJumpPressed;
 
@@ -28,7 +28,7 @@ namespace _Scripts.Player.States
         {
             _StateMachine = new StateMachine();
             _playerMovement = GetComponent<PlayerMovement>();
-            _animator = GetComponentInChildren<Animator>();
+            _animator = GetComponent<AnimatorController>();
             _PlayerVisuals = GetComponent<PlayerVisuals>();
 
             _playerChannel.PlayerChangeShapeEvent += PlayerChangeShapeEvent;

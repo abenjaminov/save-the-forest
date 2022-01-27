@@ -8,7 +8,7 @@ namespace _Scripts.Player.States
         public PlayerShape Shape;
         private static readonly int s_Shape = Animator.StringToHash("Shape");
 
-        public PlayerChangeShapeState(Animator animator, PlayerVisuals playerVisuals) : base(animator)
+        public PlayerChangeShapeState(AnimatorController animator, PlayerVisuals playerVisuals) : base(animator)
         {
             _PlayerVisuals = playerVisuals;
             Shape = PlayerShape.Human;
@@ -22,7 +22,6 @@ namespace _Scripts.Player.States
         public override void OnEnter()
         {
             _PlayerVisuals.ChangeShape(Shape);
-            _animator.SetInteger(s_Shape, (int)Shape);
         }
 
         public override void Tick()

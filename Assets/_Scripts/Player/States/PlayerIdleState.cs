@@ -6,7 +6,7 @@ namespace _Scripts.Player.States
     {
         private PlayerMovement _PlayerMovement;
         
-        public PlayerIdleState(Animator animator, PlayerMovement playerMovement) : base(animator)
+        public PlayerIdleState(AnimatorController animator, PlayerMovement playerMovement) : base(animator)
         {
             _PlayerMovement = playerMovement;
         }

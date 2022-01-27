@@ -7,7 +7,7 @@ namespace _Scripts.Player.States
         public Vector2 MovementDirection;
         private PlayerMovement _PlayerMovement;
         
-        public PlayerMoveState(Animator animator, PlayerMovement playerMovement) : base(animator)
+        public PlayerMoveState(AnimatorController animator, PlayerMovement playerMovement) : base(animator)
         {
             _PlayerMovement = playerMovement;
         }
