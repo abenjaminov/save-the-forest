@@ -22,6 +22,8 @@ namespace _Scripts
         private void Move()
         {
             Vector3 positionDelta = new Vector3(playerInput.x, 0, playerInput.y) * moveSpeed * Time.deltaTime;
+            float targetAngle = Mathf.Atan2(positionDelta.x, positionDelta.z) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
             characterController.Move(positionDelta);
         }
 
