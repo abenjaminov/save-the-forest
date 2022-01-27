@@ -17,16 +17,9 @@ namespace _Scripts.Player.States
             return PlayerAnimationState.Run;
         }
 
-        public override void OnEnter()
-        {
-            base.OnEnter();
-
-            _PlayerMovement.Move(MovementDirection);
-        }
-
         public override void Tick()
         {
-            
+            _PlayerMovement.Move(MovementDirection);
         }
 
         public override void OnExit()

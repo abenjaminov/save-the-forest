@@ -11,6 +11,7 @@ namespace _Scripts.Input
 
         void OnMove(InputValue inputValue)
         {
+            Debug.Log("Hello");
             var inputOptions = new InputActionOptions()
             {
                 MovementDirection = inputValue.Get<Vector2>()

@@ -8,7 +8,7 @@ namespace _Scripts.Player.States
 {
     public class PlayerStates : MonoBehaviour
     {
-        [SerializeField] private InputChannel _inputchannel;
+        [SerializeField] private InputChannel _inputChannel;
         private StateMachine _StateMachine;
 
         private PlayerIdleState _idleState;
@@ -23,7 +23,7 @@ namespace _Scripts.Player.States
             _playerMovement = GetComponent<PlayerMovement>();
             _animator = GetComponentInChildren<Animator>();
 
-            _inputchannel.SubscribeAction(InputActionTypes.Move, OnMoveAction);
+            _inputChannel.SubscribeAction(InputActionTypes.Move, OnMoveAction);
         }
 
         private void OnMoveAction(InputActionOptions options)
@@ -34,12 +34,20 @@ namespace _Scripts.Player.States
         private void Start()
         {
             _idleState = new PlayerIdleState(_animator, _playerMovement);
+            _moveState = new PlayerMoveState(_animator, _playerMovement);
 
             var shouldIdle = new Func<bool>(() => _moveState.MovementDirection == Vector2.zero);
             var shouldMove = new Func<bool>(() => _moveState.MovementDirection != Vector2.zero);
             
             _StateMachine.AddTransition(_idleState, shouldIdle);     
             _StateMachine.AddTransition(_moveState, shouldMove, _idleState);
+            
+            _StateMachine.SetState(_idleState);
+        }
+
+        private void Update()
+        {
+            _StateMachine.Tick();
         }
     }
 }
