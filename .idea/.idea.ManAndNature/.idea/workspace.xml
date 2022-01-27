@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerChangeShapeState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerChangeShapeState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,13 +53,13 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Input/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerMoveState.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/PlayerShapeInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerChangeShapeState.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/PlayerChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerChangeShapeState.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +105,7 @@
       <updated>1643307766139</updated>
       <workItem from="1643307794860" duration="6472000" />
       <workItem from="1643315190929" duration="4350000" />
-      <workItem from="1643319593386" duration="5157000" />
+      <workItem from="1643319593386" duration="6086000" />
     </task>
     <servers />
   </component>

@@ -17,6 +17,7 @@ namespace _Scripts.Player.States
         private PlayerMoveState _moveState;
         private PlayerJumpState _jumpState;
         private PlayerChangeShapeState _changeShapeState;
+        
         private PlayerMovement _playerMovement;
         private PlayerVisuals _PlayerVisuals;
         private Animator _animator;
@@ -81,7 +82,7 @@ namespace _Scripts.Player.States
             _StateMachine.SetState(_idleState);
             
             var shouldShapeShift = new Func<bool>(() => _PlayerVisuals.CurrentShape != _changeShapeState.Shape);
-            
+
             _StateMachine.AddTransition(_changeShapeState, shouldShapeShift, _idleState);
             _StateMachine.AddTransition(_changeShapeState, shouldShapeShift, _moveState);
         }
