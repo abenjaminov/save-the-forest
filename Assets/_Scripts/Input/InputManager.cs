@@ -71,5 +71,32 @@ namespace _Scripts.Input
         {
             _inputChannel.OnAction(InputActionTypes.Jump, null);
         }
+
+        void OnShiftToHuman(InputValue inputValue)
+        {
+            var inputOptions = new InputActionOptions()
+            {
+                PlayerShape = Player.PlayerShape.Human
+            };
+            _inputChannel.OnAction(InputActionTypes.ShiftToHuman, inputOptions);
+        }
+
+        void OnShiftToBear(InputValue inputValue)
+        {
+            var inputOptions = new InputActionOptions()
+            {
+                PlayerShape = Player.PlayerShape.Bear
+            };
+            _inputChannel.OnAction(InputActionTypes.ShiftToBear, inputOptions);
+        }
+
+        void OnShiftToRabbit(InputValue inputValue)
+        {
+            var inputOptions = new InputActionOptions()
+            {
+                PlayerShape = Player.PlayerShape.Rabbit
+            };
+            _inputChannel.OnAction(InputActionTypes.ShiftToRabbit, inputOptions);
+        }
     }
 }

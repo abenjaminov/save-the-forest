@@ -35,16 +35,18 @@ namespace _Scripts.Player.States
             _animator = GetComponent<AnimatorController>();
             _PlayerVisuals = GetComponent<PlayerVisuals>();
 
-            _playerChannel.PlayerChangeShapeEvent += PlayerChangeShapeEvent;
             _inputChannel.SubscribeAction(InputActionTypes.Move, OnMoveAction);
             _inputChannel.SubscribeAction(InputActionTypes.Jump, OnJumpAction);
             _inputChannel.SubscribeAction(InputActionTypes.Attack1, OnBearHandAttackAction);
             _inputChannel.SubscribeAction(InputActionTypes.Attack2, OnBearFrontAttackAction);
+            _inputChannel.SubscribeAction(InputActionTypes.ShiftToHuman, PlayerChangeShapeEvent);
+            _inputChannel.SubscribeAction(InputActionTypes.ShiftToBear, PlayerChangeShapeEvent);
+            _inputChannel.SubscribeAction(InputActionTypes.ShiftToRabbit, PlayerChangeShapeEvent);
         }
 
-        private void PlayerChangeShapeEvent(PlayerShape shape)
+        private void PlayerChangeShapeEvent(InputActionOptions options)
         {
-            _changeShapeState.Shape = shape;
+            _changeShapeState.Shape = options.PlayerShape;
         }
 
         private void OnMoveAction(InputActionOptions options)

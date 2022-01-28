@@ -5,6 +5,9 @@ namespace _Scripts.ScriptableObjects.Channels.Input.Models
         Move,
         Jump,
         Attack1,
-        Attack2
+        Attack2,
+        ShiftToHuman,
+        ShiftToBear,
+        ShiftToRabbit
     }
 }
