@@ -36,7 +36,10 @@ namespace _Scripts.Behaviours
             
             if (size > 0)
             {
-                _objectsBetween = hits.Where(x => x.collider != null).Select(x => x.collider.GetComponent<Renderer>()).ToList();
+                _objectsBetween = hits.Where(x => x.collider != null && 
+                                                  x.collider.gameObject != _firstEdge.gameObject && 
+                                                  x.collider.gameObject != _secondEdge.gameObject)
+                    .Select(x => x.collider.GetComponent<Renderer>()).ToList();
                 _objectsBetween.ForEach(x => x.material.SetFloat(s_Transparency, _transparency));
             }
         }
