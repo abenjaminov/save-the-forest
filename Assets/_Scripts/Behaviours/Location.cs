@@ -11,6 +11,8 @@ namespace _Scripts.Behaviours
         [SerializeField] private string LocationGuid;
         private void OnTriggerEnter(Collider other)
         {
+            if (!other.CompareTag("Player")) return;
+            
             _ObjectivesChannel.OnEnterLocation(LocationGuid); 
         }
     }
