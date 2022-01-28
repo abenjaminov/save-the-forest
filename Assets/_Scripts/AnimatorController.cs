@@ -5,7 +5,12 @@ namespace _Scripts
     public class AnimatorController : MonoBehaviour
     {
         private Animator _animator;
-        
+
+        private void Awake()
+        {
+            Refresh();
+        }
+
         public void Refresh()
         {
             _animator = GetComponentInChildren<Animator>();
