@@ -20,7 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/GoToLocationObjective.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/GoToLocationObjective.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy/EnemyStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy/EnemyStates.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Input/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Input/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +47,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.2.0/InputSystem/Plugins/PlayerInput/InputValue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E147BE8A-8A8F-49C6-A0A4-A64CD2E2F53A/ea/9f019821/AnimationState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DDD0E5B8-B70F-4121-B171-24414B1C6BB1/1b/795885f3/InputActionType.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -44,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerState.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActions.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActionOptions.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Input/InputManager.cs" />
@@ -59,7 +74,14 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStates.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/AnimatorController.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Enemy/EnemyPatrolState.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/State/StateBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/GoToLocationObjective.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/CombatChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs" />
       </list>
     </option>
   </component>
