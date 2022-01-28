@@ -37,10 +37,20 @@ namespace _Scripts.Behaviours
             
             if (size > 0)
             {
-                _objectsBetween = hits.Where(x => x.collider != null && 
+                _objectsBetween.Clear();
+                
+                var relevantHits = hits.Where(x => x.collider != null && 
                                                   x.collider.gameObject != _firstEdge.gameObject && 
-                                                  x.collider.gameObject != _secondEdge.gameObject)
-                    .Select(x => x.collider.GetComponent<MeshRenderer>()).ToList();
+                                                  x.collider.gameObject != _secondEdge.gameObject &&
+                                                  !x.collider.CompareTag("NotTransparent"));
+                foreach (var hit in relevantHits)
+                {
+                    if (hit.collider.TryGetComponent(typeof(MeshRenderer), out var component))
+                    {
+                        _objectsBetween.Add(component as MeshRenderer);        
+                    }
+                }
+                
                 _objectsBetween.ForEach(x => x.shadowCastingMode = ShadowCastingMode.ShadowsOnly);
             }
         }

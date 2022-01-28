@@ -14,14 +14,19 @@
             <e p="Location.cs" t="Include" />
             <e p="ObjectTransparencyHandler.cs" t="Include" />
           </e>
+          <e p="Combat.cs" t="Include" />
           <e p="DebugHelper.cs" t="Include" />
           <e p="Enemy" t="Include">
-            <e p="EnemyFollowState.cs" t="Include" />
-            <e p="EnemyIdleState.cs" t="Include" />
-            <e p="EnemyPatrolState.cs" t="Include" />
-            <e p="EnemyStates.cs" t="Include" />
+            <e p="EnemyMovement.cs" t="Include" />
+            <e p="States" t="Include">
+              <e p="EnemyAttackState.cs" t="Include" />
+              <e p="EnemyFollowState.cs" t="Include" />
+              <e p="EnemyIdleState.cs" t="Include" />
+              <e p="EnemyPatrolState.cs" t="Include" />
+              <e p="EnemyStates.cs" t="Include" />
+            </e>
           </e>
-          <e p="EnemyMovement.cs" t="Include" />
+          <e p="Health.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />
           </e>
@@ -29,6 +34,7 @@
             <e p="ObjectivesManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
+            <e p="PlayerInteractions.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerVisuals.cs" t="Include" />
             <e p="States" t="Include">
