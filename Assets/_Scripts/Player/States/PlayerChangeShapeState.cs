@@ -1,6 +1,5 @@
 using _Scripts.State;
 using UnityEngine;
-using AnimationState = _Scripts.State.AnimationState;
 
 namespace _Scripts.Player.States
 {
@@ -16,9 +15,9 @@ namespace _Scripts.Player.States
             Shape = _PlayerVisuals.CurrentShape;
         }
 
-        protected override AnimationState GetAnimationState()
+        protected override AnimationStateEnum GetAnimationState()
         {
-            return AnimationState.None;
+            return AnimationStateEnum.None;
         }
 
         public override void OnEnter()

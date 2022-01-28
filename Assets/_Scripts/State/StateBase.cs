@@ -2,14 +2,16 @@ using _Scripts;
 using _Scripts.State.State;
 using UnityEngine;
 
-namespace _Scripts.State
+namespace _Scripts
 {
-    public enum AnimationState
+    public enum AnimationStateEnum
     {
         None,
         Idle,
         Run,
-        Jump
+        Jump,
+        Attack1,
+        Attack2
     }
     public abstract class StateBase : IState
     {
@@ -21,7 +23,7 @@ namespace _Scripts.State
             _animator = animator;
         }
 
-        protected abstract AnimationState GetAnimationState();
+        protected abstract AnimationStateEnum GetAnimationState();
 
         public virtual void OnEnter()
         {

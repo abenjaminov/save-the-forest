@@ -23,5 +23,10 @@ namespace _Scripts.Input
         {
             _inputChannel.OnAction(InputActionTypes.Jump, null);
         }
+
+        void OnAttack1(InputValue inputValue)
+        {
+            _inputChannel.OnAction(InputActionTypes.Attack1, null);
+        }
     }
 }

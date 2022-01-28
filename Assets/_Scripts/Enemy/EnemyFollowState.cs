@@ -14,9 +14,9 @@ public class EnemyFollowState : StateBase
         target = GameObject.Find("Player").transform;
     }
 
-    protected override AnimationState GetAnimationState()
+    protected override AnimationStateEnum GetAnimationState()
     {
-        return AnimationState.Run;
+        return AnimationStateEnum.Run;
     }
 
     public bool TargetVisible(Vector3 pos, float distance)

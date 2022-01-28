@@ -12,9 +12,9 @@ public class EnemyPatrolState : StateBase
         _EnemyMovement = EnemyMovement;
     }
 
-    protected override AnimationState GetAnimationState()
+    protected override AnimationStateEnum GetAnimationState()
     {
-        return AnimationState.Run;
+        return AnimationStateEnum.Run;
     }
 
     public override void OnEnter()

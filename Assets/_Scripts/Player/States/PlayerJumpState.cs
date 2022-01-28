@@ -1,6 +1,5 @@
 using _Scripts.State;
 using UnityEngine;
-using AnimationState = _Scripts.State.AnimationState;
 
 namespace _Scripts.Player.States
 {
@@ -13,9 +12,9 @@ namespace _Scripts.Player.States
             _PlayerMovement = playerMovement;
         }
 
-        protected override AnimationState GetAnimationState()
+        protected override AnimationStateEnum GetAnimationState()
         {
-            return AnimationState.Jump;
+            return AnimationStateEnum.Jump;
         }
 
         public override void OnEnter()

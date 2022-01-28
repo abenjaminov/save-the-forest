@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using _Scripts.State;
 using UnityEngine;
-using AnimationState = _Scripts.State.AnimationState;
 
 public class EnemyIdleState : StateBase
 {
@@ -14,9 +13,9 @@ public class EnemyIdleState : StateBase
         _EnemyMovement = EnemyMovement;
     }
 
-    protected override AnimationState GetAnimationState()
+    protected override AnimationStateEnum GetAnimationState()
     {
-        return AnimationState.Idle;
+        return AnimationStateEnum.Idle;
     }
 
     public override void OnEnter()
