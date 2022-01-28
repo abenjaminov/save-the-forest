@@ -1,18 +1,35 @@
+using _Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPatrolState : MonoBehaviour
+public class EnemyPatrolState : StateBase
 {
-    // Start is called before the first frame update
-    void Start()
+    private EnemyMovement _EnemyMovement;
+
+    public EnemyPatrolState(AnimatorController animator, EnemyMovement EnemyMovement) : base(animator)
     {
-        
+        _EnemyMovement = EnemyMovement;
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override AnimationState GetAnimationState()
     {
-        
+        return AnimationState.Run;
+    }
+
+    public override void OnEnter()
+    {
+        base.OnEnter();
+        _EnemyMovement.ResetNavigation();
+    }
+
+    public override void Tick()
+    {
+        _EnemyMovement.Patrol();
+    }
+
+    public override void OnExit()
+    {
+
     }
 }
