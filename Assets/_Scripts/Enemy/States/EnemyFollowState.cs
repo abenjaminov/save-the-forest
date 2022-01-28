@@ -21,15 +21,9 @@ public class EnemyFollowState : StateBase
 
     public bool TargetVisible(Vector3 pos, float distance)
     {
-        RaycastHit hit;
-        if (Vector3.Distance(pos, target.position) <= distance / 1.5f)
+        if (Vector3.Distance(pos, target.position) <= distance)
         {
             return true;
-        }
-        else if (Vector3.Distance(pos, target.position) <= distance)
-        {
-            Physics.Raycast(pos, target.position, out hit);
-            return hit.Equals(target);
         }
         return false;
     }
