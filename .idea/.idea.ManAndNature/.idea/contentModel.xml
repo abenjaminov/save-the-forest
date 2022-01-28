@@ -24,6 +24,9 @@
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />
           </e>
+          <e p="Objectives" t="Include">
+            <e p="ObjectivesManager.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerVisuals.cs" t="Include" />

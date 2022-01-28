@@ -9,7 +9,10 @@ namespace _Scripts.ScriptableObjects.Channels
     {
         public UnityAction<string> OnEnterLocationEvent;
         public UnityAction<Objective> OnObjectiveCompleteEvent;
+        public UnityAction<Objective> OnObjectiveActiveEvent;
 
+        
+        
         public void OnObjectiveComplete(Objective obj)
         {
             OnObjectiveCompleteEvent?.Invoke(obj);
@@ -18,6 +21,11 @@ namespace _Scripts.ScriptableObjects.Channels
         public void OnEnterLocation(string locationGuid)
         {
             OnEnterLocationEvent?.Invoke(locationGuid);
+        }
+
+        public void OnObjectiveActive(Objective objective)
+        {
+            OnObjectiveActiveEvent?.Invoke(objective);
         }
     }
 }
