@@ -13,6 +13,11 @@
             <e p="ObjectTransparencyHandler.cs" t="Include" />
           </e>
           <e p="DebugHelper.cs" t="Include" />
+          <e p="Enemy" t="Include">
+            <e p="EnemyFollowState.cs" t="Include" />
+            <e p="EnemyIdleState.cs" t="Include" />
+            <e p="EnemyPatrolState.cs" t="Include" />
+          </e>
           <e p="EnemyMovement.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />
@@ -25,7 +30,6 @@
               <e p="PlayerIdleState.cs" t="Include" />
               <e p="PlayerJumpState.cs" t="Include" />
               <e p="PlayerMoveState.cs" t="Include" />
-              <e p="PlayerStateBase.cs" t="Include" />
               <e p="PlayerStates.cs" t="Include" />
             </e>
           </e>
@@ -44,8 +48,20 @@
           </e>
           <e p="State" t="Include">
             <e p="IState.cs" t="Include" />
+            <e p="StateBase.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
             <e p="Transition.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TriForge Assets" t="Include">
+          <e p="Top Down - Fantasy Forest" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="Flame.shader" t="Include" />
+              <e p="StandardCullOff.shader" t="Include" />
+              <e p="TreeLod.shader" t="Include" />
+              <e p="TreeTopDown.shader" t="Include" />
+              <e p="Water.shader" t="Include" />
+            </e>
           </e>
         </e>
       </e>
