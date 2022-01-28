@@ -15,8 +15,6 @@ namespace _Scripts
 
         Vector3 playerMovment;
 
-        
-
         float distanceGround;
         bool isGrounded = false;
 
@@ -55,12 +53,17 @@ namespace _Scripts
             }
 
             var moveDirection = new Vector3(playerMovment.x * horizontalSpeed, 
-                                            verticalSpeed, 
+                                            0f, 
                                             playerMovment.z * horizontalSpeed);
-            var targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
-            characterController.Move(moveDirection  * Time.deltaTime);
+            if (moveDirection.magnitude > 0.1f && horizontalSpeed > 0)
+            {
+                var targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+            }
+
+            moveDirection.y = verticalSpeed;
+            characterController.Move(moveDirection * Time.deltaTime);
         }
         
         public void Idle()
