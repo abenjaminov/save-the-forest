@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e72e9997eda648e490509510173c9142, type: 3}
-  m_Name: Objectives Channel
+  m_Script: {fileID: 11500000, guid: 8d9b1766813b4add9606d174ebf2a3a9, type: 3}
+  m_Name: UI Channel
   m_EditorClassIdentifier: 
-  _UIChannel: {fileID: 11400000, guid: adc585ecbc2271847bba1d100c03514b, type: 2}

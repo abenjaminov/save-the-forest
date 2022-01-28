@@ -12,8 +12,9 @@ namespace _Scripts.ScriptableObjects.Objectives
     
     public abstract class Objective : ScriptableObject
     {
+        public string GUID;
         [SerializeField] protected ObjectivesChannel _ObjectivesChannel;
-        [SerializeField] protected string Description;
+        public string Description;
         public Objective NextObjective;
         protected ObjectiveState State;
 
