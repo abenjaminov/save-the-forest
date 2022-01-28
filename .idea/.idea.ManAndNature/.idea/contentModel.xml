@@ -4,6 +4,7 @@
     <e p="C:\Users\Centrical\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Centrical\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ManAndNature.-1711279888.00" t="ExcludeRecursive" />
     <e p="C:\Users\Centrical\ManAndNature" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
@@ -31,6 +32,7 @@
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerVisuals.cs" t="Include" />
             <e p="States" t="Include">
+              <e p="BearFrontAttackState.cs" t="Include" />
               <e p="BearHandAttackState.cs" t="Include" />
               <e p="PlayerChangeShapeState.cs" t="Include" />
               <e p="PlayerIdleState.cs" t="Include" />
@@ -65,7 +67,72 @@
             <e p="Transition.cs" t="Include" />
           </e>
         </e>
+        <e p="JMO Assets" t="Include">
+          <e p="Cartoon FX Easy Editor" t="Include">
+            <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CFXEasyEditor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Cartoon FX Remaster" t="Include">
+            <e p="CFXR Assets" t="Include">
+              <e p="Editor" t="Include">
+                <e p="CFXR Editor.asmdef" t="Include" />
+                <e p="CFXR_BuildShaderPreprocessor.cs" t="Include" />
+                <e p="CFXR_ExpressionParser.cs" t="Include" />
+                <e p="CFXR_MaterialInspector.cs" t="Include" />
+                <e p="CFXR_Styles.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="CFXR Runtime.asmdef" t="Include" />
+                <e p="CFXR_Effect.CameraShake.cs" t="Include" />
+                <e p="CFXR_Effect.cs" t="Include" />
+                <e p="CFXR_ParticleText.cs" t="Include" />
+                <e p="CFXR_ParticleText_Runtime.cs" t="Include" />
+                <e p="CFXR_ParticleTextFontAsset.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="CFXR Particle Distortion.shader" t="Include" />
+                <e p="CFXR Particle Glow.shader" t="Include" />
+                <e p="CFXR Particle Procedural Ring.shader" t="Include" />
+                <e p="CFXR Particle Ubershader.shader" t="Include" />
+                <e p="CFXR.cginc" t="Include" />
+                <e p="CFXR_SETTINGS.cginc" t="Include" />
+                <e p="CFXR_URP.cginc" t="Include" />
+              </e>
+            </e>
+            <e p="CFXR Prefabs" t="Include">
+              <e p="Texts" t="Include">
+                <e p="_Make your own text effect.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Demo Assets" t="Include">
+              <e p="CFXR Demo.asmdef" t="Include" />
+              <e p="CFXR_Demo.cs" t="Include" />
+              <e p="CFXR_Demo_RandomText.cs" t="Include" />
+              <e p="CFXR_Demo_Rotate.cs" t="Include" />
+              <e p="Kino Bloom" t="Include">
+                <e p="Bloom.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="BloomEditor.cs" t="Include" />
+                  <e p="BloomGraphDrawer.cs" t="Include" />
+                  <e p="KinoBloom.Editor.asmdef" t="Include" />
+                </e>
+                <e p="KinoBloom.Runtime.asmdef" t="Include" />
+                <e p="Shader" t="Include">
+                  <e p="Bloom.cginc" t="Include" />
+                  <e p="Bloom.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Readme Cartoon FX Remaster.txt" t="Include" />
+          </e>
+        </e>
       </e>
+      <e p="CFXRDemo.csproj" t="IncludeRecursive" />
+      <e p="CFXREditor.csproj" t="IncludeRecursive" />
+      <e p="CFXRRuntime.csproj" t="IncludeRecursive" />
+      <e p="KinoBloom.Runtime.csproj" t="IncludeRecursive" />
       <e p="Library" t="Include">
         <e p="PackageCache" t="Include">
           <e p="com.unity.ugui@1.0.0" t="Include">
@@ -240,6 +307,7 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="ToonyColorsPro.Demo.Editor.csproj" t="IncludeRecursive" />
       <e p="UnityEditor.UI.csproj" t="IncludeRecursive" />
       <e p="UnityEngine.UI.csproj" t="IncludeRecursive" />
     </e>

@@ -33,7 +33,7 @@ namespace _Scripts.Behaviours
             }
             
             var hits = new RaycastHit[100];
-            var size = Physics.RaycastNonAlloc(firstEdgePosition, direction, hits, Vector3.Distance(secondEdgePosition, firstEdgePosition));
+            var size = Physics.BoxCastNonAlloc(firstEdgePosition, new Vector3(5,5,100),  direction, hits);
             
             if (size > 0)
             {

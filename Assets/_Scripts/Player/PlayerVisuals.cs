@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using CartoonFX;
 using UnityEngine;
 
 namespace _Scripts.Player
@@ -35,8 +36,13 @@ namespace _Scripts.Player
 
         public void ChangeShape(PlayerShape shape)
         {
-            //_changeShapeEffect.Play();
+            _changeShapeEffect.Play(true);
             
+            ShapeShift(shape);
+        }
+
+        private void ShapeShift(PlayerShape shape)
+        {
             ShapesMap[CurrentShape].SetActive(false);
             CurrentShape = shape;
             ShapesMap[CurrentShape].SetActive(true);
