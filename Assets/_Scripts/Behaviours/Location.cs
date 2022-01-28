@@ -11,20 +11,15 @@ namespace _Scripts.Behaviours
     {
         [SerializeField] private UIChannel _UIChannel;
         [SerializeField] private PlayerChannel _PlayerChannel;
-        [SerializeField] private ObjectivesChannel _ObjectivesChannel;
+        [SerializeField] private GameChannel _GameChannel;
         [SerializeField] private GameAction _arriveAtLocationAction;
         [SerializeField] private GameAction _interactAction;
 
         private bool _canInteract;
 
-        private void Awake()
-        {
-            _PlayerChannel.OnPlayerInteractEvent += OnPlayerInteractEvent;
-        }
-
         private void OnPlayerInteractEvent()
         {
-            _ObjectivesChannel.OnActionEvent(_interactAction);
+            _GameChannel.OnAction(_interactAction);
         }
 
         private void OnTriggerExit(Collider other)
@@ -39,7 +34,7 @@ namespace _Scripts.Behaviours
             if (!other.CompareTag("Player")) return;
 
             _PlayerChannel.OnPlayerInteractEvent += OnPlayerInteractEvent;
-            _ObjectivesChannel.OnActionEvent(_arriveAtLocationAction);
+            _GameChannel.OnAction(_arriveAtLocationAction);
         }
     }
 }

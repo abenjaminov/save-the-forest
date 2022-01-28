@@ -16,7 +16,10 @@ namespace _Scripts.ScriptableObjects.Objectives
     [CreateAssetMenu(fileName = "Action Objective", menuName = "Objectives/Action", order = 0)]
     public class ActionObjective : ScriptableObject
     {
+        [SerializeField] private GameChannel _GameChannel;
         [SerializeField] protected ObjectivesChannel _ObjectivesChannel;
+        [SerializeField] private StoryItem StoryWhenActivated;
+        [SerializeField] private StoryItem StoryWhenCompleted;
         public List<ActionInfo> ActionInfos;
         public string GUID;
         
@@ -27,12 +30,12 @@ namespace _Scripts.ScriptableObjects.Objectives
         
         private void OnDisable()
         {
-            _ObjectivesChannel.OnActionEvent -= OnActionEvent;
+            _GameChannel.OnActionEvent -= OnActionEvent;
         }
 
         private void OnEnable()
         {
-            _ObjectivesChannel.OnActionEvent += OnActionEvent;
+            _GameChannel.OnActionEvent += OnActionEvent;
 
             foreach (var actionInfo in ActionInfos)
             {
@@ -44,6 +47,11 @@ namespace _Scripts.ScriptableObjects.Objectives
         {
             State = ObjectiveState.Active;
             _ObjectivesChannel.OnObjectiveActive(this);
+
+            if (StoryWhenActivated != null)
+            {
+                _GameChannel.OnShowStory(StoryWhenActivated);
+            }
         }
         
         protected void Complete()
@@ -66,7 +74,24 @@ namespace _Scripts.ScriptableObjects.Objectives
             
             if (ActionInfos.Any(x => !x.Happened)) return;
             
-            _ObjectivesChannel.OnActionEvent -= OnActionEvent;
+            _GameChannel.OnActionEvent -= OnActionEvent;
+
+            if (StoryWhenCompleted == null)
+            {
+                this.Complete();    
+            }
+            else
+            {
+                _GameChannel.OnStoryToldEvent += OnStoryToldEvent;
+                _GameChannel.OnShowStory(StoryWhenCompleted);
+            }
+        }
+
+        private void OnStoryToldEvent(StoryItem arg0)
+        {
+            if (arg0.Guid != StoryWhenCompleted.Guid) return;
+            
+            _GameChannel.OnStoryToldEvent -= OnStoryToldEvent;
             
             this.Complete();
         }
