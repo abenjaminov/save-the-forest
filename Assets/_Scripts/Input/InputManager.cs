@@ -1,5 +1,5 @@
-﻿using _Scripts.ScriptableObjects.Channels.Input.Models;
-using ScriptableObjects.Channels;
+﻿using _Scripts.ScriptableObjects.Channels.Input;
+using _Scripts.ScriptableObjects.Channels.Input.Models;
 using UnityEngine;
 using UnityEngine.InputSystem;
 

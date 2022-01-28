@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using _Scripts.ScriptableObjects.Channels.Input.Models;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 
-namespace ScriptableObjects.Channels
+namespace _Scripts.ScriptableObjects.Channels.Input
 {
     [CreateAssetMenu(fileName = "Input Channel", menuName = "Channels/Input Channel", order = 2)]
     public class InputChannel : ScriptableObject

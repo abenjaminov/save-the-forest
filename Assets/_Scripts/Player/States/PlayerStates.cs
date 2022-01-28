@@ -1,7 +1,7 @@
 using System;
 using _Scripts.ScriptableObjects.Channels;
+using _Scripts.ScriptableObjects.Channels.Input;
 using _Scripts.ScriptableObjects.Channels.Input.Models;
-using ScriptableObjects.Channels;
 using State;
 using UnityEngine;
 

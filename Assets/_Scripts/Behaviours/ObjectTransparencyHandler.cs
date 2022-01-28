@@ -11,12 +11,12 @@ namespace _Scripts.Behaviours
         [SerializeField] private Transform _secondEdge;
         [Range(0,1)] [SerializeField] private float _transparency;
 
-        private List<Renderer> _objectsBetween;
+        private List<Material> _objectsBetween;
         private static readonly int s_Transparency = Shader.PropertyToID("_Transparency");
 
         private void Awake()
         {
-            _objectsBetween = new List<Renderer>();
+            _objectsBetween = new List<Material>();
         }
 
         private void Update()
@@ -28,7 +28,7 @@ namespace _Scripts.Behaviours
 
             if (_objectsBetween.Count > 0)
             {
-                _objectsBetween.ForEach(x => x.material.SetFloat(s_Transparency, 1));
+                _objectsBetween.ForEach(x => x.SetFloat(s_Transparency, 1));
             }
             
             var hits = new RaycastHit[100];
@@ -36,8 +36,11 @@ namespace _Scripts.Behaviours
             
             if (size > 0)
             {
-                _objectsBetween = hits.Where(x => x.collider != null).Select(x => x.collider.GetComponent<Renderer>()).ToList();
-                _objectsBetween.ForEach(x => x.material.SetFloat(s_Transparency, _transparency));
+                _objectsBetween = hits.Where(x => x.collider != null && 
+                                                  x.collider.gameObject != _firstEdge.gameObject && 
+                                                  x.collider.gameObject != _secondEdge.gameObject)
+                    .SelectMany(x => x.collider.GetComponent<Renderer>().materials).ToList();
+                _objectsBetween.ForEach(x => x.SetFloat(s_Transparency, _transparency));
             }
         }
     }

@@ -10,6 +10,7 @@
           <e p="AnimatorController.cs" t="Include" />
           <e p="Behaviours" t="Include">
             <e p="InputHandler.cs" t="Include" />
+            <e p="Location.cs" t="Include" />
             <e p="ObjectTransparencyHandler.cs" t="Include" />
           </e>
           <e p="DebugHelper.cs" t="Include" />
@@ -17,15 +18,20 @@
             <e p="EnemyFollowState.cs" t="Include" />
             <e p="EnemyIdleState.cs" t="Include" />
             <e p="EnemyPatrolState.cs" t="Include" />
+            <e p="EnemyStates.cs" t="Include" />
           </e>
           <e p="EnemyMovement.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />
           </e>
+          <e p="Objectives" t="Include">
+            <e p="ObjectivesManager.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerVisuals.cs" t="Include" />
             <e p="States" t="Include">
+              <e p="BearHandAttackState.cs" t="Include" />
               <e p="PlayerChangeShapeState.cs" t="Include" />
               <e p="PlayerIdleState.cs" t="Include" />
               <e p="PlayerJumpState.cs" t="Include" />
@@ -35,6 +41,7 @@
           </e>
           <e p="ScriptableObjects" t="Include">
             <e p="Channels" t="Include">
+              <e p="CombatChannel.cs" t="Include" />
               <e p="Input" t="Include">
                 <e p="InputChannel.cs" t="Include" />
                 <e p="Models" t="Include">
@@ -42,7 +49,12 @@
                   <e p="InputActionTypes.cs" t="Include" />
                 </e>
               </e>
+              <e p="ObjectivesChannel.cs" t="Include" />
               <e p="PlayerChannel.cs" t="Include" />
+            </e>
+            <e p="Objectives" t="Include">
+              <e p="GoToLocationObjective.cs" t="Include" />
+              <e p="Objective.cs" t="Include" />
             </e>
             <e p="PlayerShapeInfo.cs" t="Include" />
           </e>
@@ -51,17 +63,6 @@
             <e p="StateBase.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
             <e p="Transition.cs" t="Include" />
-          </e>
-        </e>
-        <e p="TriForge Assets" t="Include">
-          <e p="Top Down - Fantasy Forest" t="Include">
-            <e p="Shaders" t="Include">
-              <e p="Flame.shader" t="Include" />
-              <e p="StandardCullOff.shader" t="Include" />
-              <e p="TreeLod.shader" t="Include" />
-              <e p="TreeTopDown.shader" t="Include" />
-              <e p="Water.shader" t="Include" />
-            </e>
           </e>
         </e>
       </e>
