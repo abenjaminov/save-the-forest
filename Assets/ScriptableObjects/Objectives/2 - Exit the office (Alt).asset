@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1130eca8d998410b97eab1b87f6a1949, type: 3}
-  m_Name: Exit the office
+  m_Name: 2 - Exit the office (Alt)
   m_EditorClassIdentifier: 
+  GUID: 15b0a83a-cd64-4542-9aed-512771a650ca
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
-  Description: Exit the building
+  Description: Exit the office (Alt)
   NextObjective: {fileID: 0}
-  ActionInfos:
-  - ActionGuid: a6d1ef35-dc0e-4b46-be3a-746233a563e9
-    Happened: 0
+  ActionInfos: []

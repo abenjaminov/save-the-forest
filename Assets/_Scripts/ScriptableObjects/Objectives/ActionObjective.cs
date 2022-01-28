@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace _Scripts.ScriptableObjects.Objectives
 {
-    [CreateAssetMenu(fileName = "Go to location", menuName = "Objectives/Go to location", order = 0)]
+    [CreateAssetMenu(fileName = "Action Objective", menuName = "Objectives/Action", order = 0)]
     public class ActionObjective : Objective
     {
         public List<ActionInfo> ActionInfos;

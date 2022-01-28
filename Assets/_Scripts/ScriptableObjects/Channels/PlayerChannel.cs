@@ -8,7 +8,13 @@ namespace _Scripts.ScriptableObjects.Channels
     public class PlayerChannel : ScriptableObject
     {
         public UnityAction<PlayerShape> PlayerChangeShapeEvent;
+        public UnityAction OnPlayerInteractEvent;
 
+        public void OnPlayerInteract()
+        {
+            OnPlayerInteractEvent?.Invoke();
+        }
+        
         public void OnPlayerChangeShape(PlayerShape shape)
         {
             PlayerChangeShapeEvent?.Invoke(shape);
