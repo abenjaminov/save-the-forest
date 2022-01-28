@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 6217606941160549551}
   m_Layer: 0
   m_Name: bulldozer
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -644,6 +644,7 @@ MonoBehaviour:
   AttackRadius: 1.5
   AttackInterval: 0.8
   FirstAttackDelay: 0.4
+  FilterTag: Enemy
 --- !u!1 &2355814374763284152
 GameObject:
   m_ObjectHideFlags: 0
