@@ -37,7 +37,7 @@ public class EnemyStates : MonoBehaviour
         _idleState = new EnemyIdleState(_animator, _EnemyMovement);
         _patrolState = new EnemyPatrolState(_animator, _EnemyMovement);
         _followState = new EnemyFollowState(_animator, _EnemyMovement);
-        _attackState = new EnemyAttackState(_animator, _combat);
+        _attackState = new EnemyAttackState(_animator, _EnemyMovement, _combat);
 
         Player = GameObject.Find("Player").transform;
 

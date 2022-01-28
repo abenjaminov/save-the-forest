@@ -641,7 +641,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
-  AttackRadius: 1
+  AttackRadius: 1.5
+  AttackInterval: 0.8
+  FirstAttackDelay: 0.4
 --- !u!1 &2355814374763284152
 GameObject:
   m_ObjectHideFlags: 0

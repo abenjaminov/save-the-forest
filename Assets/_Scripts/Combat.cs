@@ -6,7 +6,9 @@ public class Combat : MonoBehaviour
 {
     public float Damage;
     public float AttackRadius;
-    
+    public float AttackInterval;
+    public float FirstAttackDelay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +33,15 @@ public class Combat : MonoBehaviour
                 h.Hit(Damage);
             }
         }
+    }
+
+    public void RepeatedAttack()
+    {
+        InvokeRepeating("Attack", FirstAttackDelay, AttackInterval);
+    }
+
+    public void StopRepeatedAttack()
+    {
+        CancelInvoke();
     }
 }

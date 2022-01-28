@@ -6,10 +6,12 @@ using UnityEngine;
 public class EnemyAttackState : StateBase
 {
     private Combat _Combat;
+    EnemyMovement _EnemyMovement;
 
-    public EnemyAttackState(AnimatorController animator, Combat combat) : base(animator)
+    public EnemyAttackState(AnimatorController animator, EnemyMovement enemyMovement, Combat combat) : base(animator)
     {
         _Combat = combat;
+        _EnemyMovement = enemyMovement;
     }
 
     protected override AnimationStateEnum GetAnimationState()
@@ -20,7 +22,8 @@ public class EnemyAttackState : StateBase
     public override void OnEnter()
     {
         base.OnEnter();
-        _Combat.Attack();
+        _Combat.RepeatedAttack();
+        _EnemyMovement.Idle();
     }
 
     public override void Tick()
@@ -29,5 +32,6 @@ public class EnemyAttackState : StateBase
 
     public override void OnExit()
     {
+        _Combat.StopRepeatedAttack();
     }
 }
