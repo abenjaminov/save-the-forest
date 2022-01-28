@@ -33,9 +33,13 @@ namespace _Scripts.ScriptableObjects.Objectives
         private void OnEnable()
         {
             _ObjectivesChannel.OnActionEvent += OnActionEvent;
+
+            foreach (var actionInfo in ActionInfos)
+            {
+                actionInfo.Happened = false;
+            }
         }
 
-        
         public void Activate()
         {
             State = ObjectiveState.Active;
