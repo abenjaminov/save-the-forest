@@ -112,6 +112,9 @@ GameObject:
   - component: {fileID: 4221699048551217388}
   - component: {fileID: 4221699048551217384}
   - component: {fileID: 5539635654360524571}
+  - component: {fileID: 4894765635061706559}
+  - component: {fileID: 4116340875165379292}
+  - component: {fileID: 7247304853269924588}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -321,6 +324,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _PlayerChannel: {fileID: 11400000, guid: f4a4bd81ceed35a47964911f2ee707d5, type: 2}
+--- !u!114 &4894765635061706559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221699048551217378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6377c542cf2ec0a42a8ce9fcbc0efa7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackName: Attack1
+  Damage: 1
+  AttackRadius: 1
+  AttackInterval: 0
+  FirstAttackDelay: 0.2
+  FilterTag: Player
+--- !u!114 &4116340875165379292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221699048551217378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ca622e6b07be84da76b63e0e31a95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  _combatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
+  invincible: 0
+--- !u!114 &7247304853269924588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221699048551217378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6377c542cf2ec0a42a8ce9fcbc0efa7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackName: Attack2
+  Damage: 2
+  AttackRadius: 5
+  AttackInterval: 0
+  FirstAttackDelay: 0.2
+  FilterTag: Player
 --- !u!1001 &2149621151015879923
 PrefabInstance:
   m_ObjectHideFlags: 0
