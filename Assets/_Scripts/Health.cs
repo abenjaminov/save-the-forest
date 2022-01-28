@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
         
     }
 
-    public float hit(float damage)
+    public float Hit(float damage)
     {
         if (!invincible)
         {

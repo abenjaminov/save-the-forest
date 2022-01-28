@@ -499,6 +499,8 @@ GameObject:
   - component: {fileID: 3382416792009054628}
   - component: {fileID: 3382416792009054629}
   - component: {fileID: 3382416792009054630}
+  - component: {fileID: 2007305995789947163}
+  - component: {fileID: 6217606941160549551}
   m_Layer: 0
   m_Name: bulldozer
   m_TagString: Untagged
@@ -609,7 +611,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf0ecd878a2cbc4981ec2b266f8e931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _CombatChannel: {fileID: 0}
   Player: {fileID: 0}
+--- !u!114 &2007305995789947163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355814374763284150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ca622e6b07be84da76b63e0e31a95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
+  _combatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
+  invincible: 0
+--- !u!114 &6217606941160549551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355814374763284150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6377c542cf2ec0a42a8ce9fcbc0efa7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
+  AttackRadius: 1
 --- !u!1 &2355814374763284152
 GameObject:
   m_ObjectHideFlags: 0

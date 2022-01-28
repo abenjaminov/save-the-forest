@@ -894,6 +894,10 @@ PrefabInstance:
       propertyPath: PatrolRoute.Array.data[3]
       value: 
       objectReference: {fileID: 1208104592}
+    - target: {fileID: 3382416792009054629, guid: a1f242c34ae7cd1419c044ca191c8681, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 240
+      objectReference: {fileID: 0}
     - target: {fileID: 3382416792009054630, guid: a1f242c34ae7cd1419c044ca191c8681, type: 3}
       propertyPath: Player
       value: 
