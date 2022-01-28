@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace _Scripts.Player.States
 {
-    public class PlayerIdleState : PlayerStateBase
+    public class PlayerIdleState : StateBase
     {
         private PlayerMovement _PlayerMovement;
         
@@ -11,9 +11,9 @@ namespace _Scripts.Player.States
             _PlayerMovement = playerMovement;
         }
 
-        protected override PlayerAnimationState GetAnimationState()
+        protected override AnimationState GetAnimationState()
         {
-            return PlayerAnimationState.Idle;
+            return AnimationState.Idle;
         }
 
         public override void OnEnter()

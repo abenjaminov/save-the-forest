@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace _Scripts.Player.States
 {
-    public class PlayerMoveState : PlayerStateBase
+    public class PlayerMoveState : StateBase
     {
         public Vector2 MovementDirection;
         private PlayerMovement _PlayerMovement;
@@ -12,9 +12,9 @@ namespace _Scripts.Player.States
             _PlayerMovement = playerMovement;
         }
 
-        protected override PlayerAnimationState GetAnimationState()
+        protected override AnimationState GetAnimationState()
         {
-            return PlayerAnimationState.Run;
+            return AnimationState.Run;
         }
 
         public override void Tick() 

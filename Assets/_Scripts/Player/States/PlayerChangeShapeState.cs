@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace _Scripts.Player.States
 {
-    public class PlayerChangeShapeState : PlayerStateBase
+    public class PlayerChangeShapeState : StateBase
     {
         private PlayerVisuals _PlayerVisuals;
         public PlayerShape Shape;
@@ -14,9 +14,9 @@ namespace _Scripts.Player.States
             Shape = PlayerShape.Human;
         }
 
-        protected override PlayerAnimationState GetAnimationState()
+        protected override AnimationState GetAnimationState()
         {
-            return PlayerAnimationState.None;
+            return AnimationState.None;
         }
 
         public override void OnEnter()
