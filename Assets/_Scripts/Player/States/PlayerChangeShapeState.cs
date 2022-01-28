@@ -13,7 +13,7 @@ namespace _Scripts.Player.States
         public PlayerChangeShapeState(AnimatorController animator, PlayerVisuals playerVisuals) : base(animator)
         {
             _PlayerVisuals = playerVisuals;
-            Shape = PlayerShape.Human;
+            Shape = _PlayerVisuals.CurrentShape;
         }
 
         protected override AnimationState GetAnimationState()
@@ -33,7 +33,7 @@ namespace _Scripts.Player.States
 
         public override void OnExit()
         {
-            
+            _animator.Refresh();
         }
     }
 }

@@ -8,13 +8,14 @@ namespace _Scripts
     {
         [SerializeField] float moveSpeed = 5f;
         [SerializeField] float jumpSpeed = 10f;
+        [SerializeField] float gravity = 20f;
         private float horizontalSpeed;
         private float verticalSpeed;
         CharacterController characterController;
 
         Vector3 playerMovment;
 
-        float gravity = 20f;
+        
 
         float distanceGround;
         bool isGrounded = false;
@@ -29,7 +30,6 @@ namespace _Scripts
         
         private void Update()
         {
-            //HandleGravity();
             Move();
         }
 
