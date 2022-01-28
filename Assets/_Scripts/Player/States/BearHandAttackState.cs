@@ -18,6 +18,7 @@ namespace _Scripts.Player.States
 
         public override void OnEnter()
         {
+            base.OnEnter();
             _combat.AttackInSeconds();
         }
 

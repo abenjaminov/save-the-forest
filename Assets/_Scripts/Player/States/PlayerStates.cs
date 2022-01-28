@@ -32,7 +32,7 @@ namespace _Scripts.Player.States
 
         private void Awake()
         {
-            _StateMachine = new StateMachine();
+            _StateMachine = new StateMachine(true);
             _playerMovement = GetComponent<PlayerMovement>();
             _animator = GetComponent<AnimatorController>();
             _PlayerVisuals = GetComponent<PlayerVisuals>();
@@ -84,8 +84,8 @@ namespace _Scripts.Player.States
             _bearHandAttackState = new BearHandAttackState(_animator, attack1);
             _bearFrontState = new BearFrontAttackState(_animator, attack2);
 
-            var shouldIdle = new Func<bool>(() => _moveState.MovementDirection == Vector2.zero);
-            var shouldMove = new Func<bool>(() => _moveState.MovementDirection != Vector2.zero);
+            var shouldIdle = new Func<bool>(() => _moveState.MovementDirection == Vector2.zero && !_isAttack1Pressed && !_isAttack2Pressed && !_isJumpPressed);
+            var shouldMove = new Func<bool>(() => _moveState.MovementDirection != Vector2.zero && !_isAttack1Pressed && !_isAttack2Pressed);
             var shouldJump = new Func<bool>(() => _playerMovement.IsGrounded() && _isJumpPressed);
             var shouldHandAttack = new Func<bool>(() => _PlayerVisuals.CurrentShape == PlayerShape.Bear &&
                                                         _isAttack1Pressed);
@@ -104,10 +104,12 @@ namespace _Scripts.Player.States
             _StateMachine.AddTransition(_bearHandAttackState, shouldHandAttack, _idleState, transitionName: "From Idle To Bear Hand Attack State");
             _StateMachine.AddTransition(_bearHandAttackState, shouldHandAttack, _moveState, transitionName: "From Move To Bear Hand Attack State");
             _StateMachine.AddTransition(_bearHandAttackState, shouldHandAttack, _jumpState, transitionName: "From Jump To Bear Hand Attack State");
+            _StateMachine.AddTransition(_bearHandAttackState, shouldHandAttack, _bearHandAttackState, transitionName: "From Bear Hand Attack To Bear Hand Attack State");
 
             _StateMachine.AddTransition(_bearFrontState, shouldFrontAttack, _idleState, transitionName: "From Idle To Bear Front Attack State");
             _StateMachine.AddTransition(_bearFrontState, shouldFrontAttack, _moveState, transitionName: "From Move To Bear Front Attack State");
             _StateMachine.AddTransition(_bearFrontState, shouldFrontAttack, _jumpState, transitionName: "From Jump To Bear Front Attack State");
+            _StateMachine.AddTransition(_bearFrontState, shouldFrontAttack, _bearFrontState, transitionName: "From Bear Front Attack To Bear Front Attack State");
 
             _StateMachine.AddTransition(_moveState, shouldMove, _idleState, transitionName: "From Idle To Moving State");
             _StateMachine.AddTransition(_moveState, shouldMove, _jumpState, transitionName: "From Jump To Moving State");
@@ -132,7 +134,6 @@ namespace _Scripts.Player.States
         private void Update()
         {
             _StateMachine.Tick();
-            print(_StateMachine.CurrentState);
         }
     }
 }
