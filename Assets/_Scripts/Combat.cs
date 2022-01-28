@@ -22,6 +22,7 @@ public class Combat : MonoBehaviour
     public void Attack()
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, AttackRadius);
+        print("Attack");
         foreach(var c in hits)
         {
             Health h;
