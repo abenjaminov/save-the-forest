@@ -1,4 +1,6 @@
+using _Scripts.State;
 using UnityEngine;
+using AnimationState = _Scripts.State.AnimationState;
 
 namespace _Scripts.Player.States
 {

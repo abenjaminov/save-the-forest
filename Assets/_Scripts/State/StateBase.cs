@@ -2,33 +2,35 @@ using _Scripts;
 using _Scripts.State.State;
 using UnityEngine;
 
-public enum AnimationState
+namespace _Scripts.State
 {
-    None,
-    Idle,
-    Run,
-    Jump
-}
-public abstract class StateBase : IState
-{
-    protected AnimatorController _animator;
-    private static readonly int s_State = Animator.StringToHash("_State");
-
-    protected StateBase(AnimatorController animator)
+    public enum AnimationState
     {
-        _animator = animator;
+        None,
+        Idle,
+        Run,
+        Jump
     }
-
-    protected abstract AnimationState GetAnimationState();
-
-    public virtual void OnEnter()
+    public abstract class StateBase : IState
     {
-        if (!_animator.HasAnimator()) return;
+        protected AnimatorController _animator;
+        private static readonly int s_State = Animator.StringToHash("_State");
 
-        _animator.Getanimator().SetInteger(s_State, (int)GetAnimationState());
+        protected StateBase(AnimatorController animator)
+        {
+            _animator = animator;
+        }
+
+        protected abstract AnimationState GetAnimationState();
+
+        public virtual void OnEnter()
+        {
+            if (!_animator.HasAnimator()) return;
+
+            _animator.Getanimator().SetInteger(s_State, (int)GetAnimationState());
+        }
+        public abstract void Tick();
+
+        public abstract void OnExit();
     }
-    public abstract void Tick();
-
-    public abstract void OnExit();
 }
-

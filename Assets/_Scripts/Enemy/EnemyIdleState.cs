@@ -1,7 +1,9 @@
 using _Scripts;
 using System.Collections;
 using System.Collections.Generic;
+using _Scripts.State;
 using UnityEngine;
+using AnimationState = _Scripts.State.AnimationState;
 
 public class EnemyIdleState : StateBase
 {
