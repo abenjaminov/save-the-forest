@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Combat : MonoBehaviour
 {
+    public string AttackName = "Attack";
     public float Damage;
     public float AttackRadius;
     public float AttackInterval;
@@ -34,6 +35,11 @@ public class Combat : MonoBehaviour
                 h.Hit(Damage);
             }
         }
+    }
+
+    public void AttackInSeconds()
+    {
+        Invoke("Attack", FirstAttackDelay);
     }
 
     public void RepeatedAttack()
