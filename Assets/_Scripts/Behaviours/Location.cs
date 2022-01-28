@@ -1,4 +1,5 @@
 using System;
+using _Scripts.ScriptableObjects;
 using _Scripts.ScriptableObjects.Channels;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -8,10 +9,11 @@ namespace _Scripts.Behaviours
     [RequireComponent(typeof(BoxCollider))]
     public class Location : MonoBehaviour
     {
+        [SerializeField] private UIChannel _UIChannel;
         [SerializeField] private PlayerChannel _PlayerChannel;
         [SerializeField] private ObjectivesChannel _ObjectivesChannel;
-        [SerializeField] private string _arriveAtLocationGuid;
-        [SerializeField] private string _interactGuid;
+        [SerializeField] private GameAction _arriveAtLocationAction;
+        [SerializeField] private GameAction _interactAction;
 
         private bool _canInteract;
 
@@ -22,26 +24,22 @@ namespace _Scripts.Behaviours
 
         private void OnPlayerInteractEvent()
         {
-            if (!_canInteract) return;
-            
-            _ObjectivesChannel.OnActionEvent(_interactGuid);
+            _ObjectivesChannel.OnActionEvent(_interactAction);
         }
 
         private void OnTriggerExit(Collider other)
         {
             if (!other.CompareTag("Player")) return;
 
-            _canInteract = false;
+            _PlayerChannel.OnPlayerInteractEvent -= OnPlayerInteractEvent;
         }
 
         private void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("Player")) return;
 
-            _canInteract = true;
-            _ObjectivesChannel.OnActionEvent(_arriveAtLocationGuid); 
+            _PlayerChannel.OnPlayerInteractEvent += OnPlayerInteractEvent;
+            _ObjectivesChannel.OnActionEvent(_arriveAtLocationAction);
         }
-        
-        
     }
 }

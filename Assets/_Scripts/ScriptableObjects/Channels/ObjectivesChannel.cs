@@ -1,3 +1,4 @@
+using System.Linq;
 using _Scripts.ScriptableObjects.Objectives;
 using _Scripts.UI.Models;
 using UnityEngine;
@@ -10,33 +11,50 @@ namespace _Scripts.ScriptableObjects.Channels
     {
         [SerializeField] private UIChannel _UIChannel;
         
-        public UnityAction<string> OnActionEvent;
-        public UnityAction<Objective> OnObjectiveCompleteEvent;
-        public UnityAction<Objective> OnObjectiveActiveEvent;
+        public UnityAction<GameAction> OnActionEvent;
+        public UnityAction<ActionObjective> OnObjectiveCompleteEvent;
+        public UnityAction<ActionObjective> OnObjectiveActiveEvent;
 
-        public void OnObjectiveComplete(Objective obj)
+        public void OnObjectiveComplete(ActionObjective obj)
         {
             OnObjectiveCompleteEvent?.Invoke(obj);
-            _UIChannel.OnHideHintEvent(new Hint()
-            {
-                HintGuid = obj.GUID,
-                HintText = obj.Description
-            });
+            _UIChannel.OnHideHintEvent(obj.GUID);
         }
 
-        public void OnAction(string locationGuid)
+        public void OnAction(GameAction gameAction)
         {
-            OnActionEvent?.Invoke(locationGuid);
+            OnActionEvent?.Invoke(gameAction);
         }
 
-        public void OnObjectiveActive(Objective objective)
+        public void OnObjectiveActive(ActionObjective objective)
         {
             OnObjectiveActiveEvent?.Invoke(objective);
-            _UIChannel.OnShowHintEvent(new Hint()
+
+            UpdateHints(objective);
+        }
+
+        private void UpdateHints(ActionObjective objective)
+        {
+            foreach (var actionInfo in objective.ActionInfos)
             {
-                HintGuid = objective.GUID,
-                HintText = objective.Description
-            });
+                if (actionInfo.Happened)
+                {
+                    _UIChannel.OnHideHintEvent(actionInfo.GameAction.Guid);
+                }
+                else
+                {
+                    _UIChannel.OnShowHintEvent(new Hint()
+                    {
+                        HintGuid = actionInfo.GameAction.Guid,
+                        HintText = actionInfo.GameAction.Hint
+                    });
+                }
+            }
+        }
+
+        public void OnObjectiveProgress(ActionObjective actionObjective)
+        {
+            UpdateHints(actionObjective);
         }
     }
 }
