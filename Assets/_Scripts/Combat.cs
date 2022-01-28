@@ -8,6 +8,7 @@ public class Combat : MonoBehaviour
     public float AttackRadius;
     public float AttackInterval;
     public float FirstAttackDelay;
+    public string FilterTag = "";
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class Combat : MonoBehaviour
         foreach(var c in hits)
         {
             Health h;
-            if(c.TryGetComponent<Health>(out h))
+            if(c.TryGetComponent<Health>(out h) && (FilterTag == "" || c.tag != FilterTag))
             {
                 h.Hit(Damage);
             }
