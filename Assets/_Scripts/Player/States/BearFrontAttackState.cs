@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace _Scripts.Player.States
 {
-    public class BearHandAttackState : StateBase
+    public class BearFrontAttackState : StateBase
     {
-        public BearHandAttackState(AnimatorController animator) : base(animator)
+        public BearFrontAttackState(AnimatorController animator) : base(animator)
         {
         }
 
         protected override AnimationStateEnum GetAnimationState()
         {
-            return AnimationStateEnum.Attack1;
+            return AnimationStateEnum.Attack2;
         }
 
         public override void Tick()
