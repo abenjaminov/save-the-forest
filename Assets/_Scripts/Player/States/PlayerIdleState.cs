@@ -1,6 +1,4 @@
 using UnityEngine;
-using static EnemyStateBase;
-using AnimationState = EnemyStateBase.AnimationState;
 
 namespace _Scripts.Player.States
 {

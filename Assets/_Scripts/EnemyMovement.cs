@@ -21,13 +21,13 @@ public class EnemyMovement : MonoBehaviour
         agent.SetDestination(pos);
     }
 
-    public void SetFollow(Transform t)
+    public void Follow(Transform t)
     {
         ResetNavigation();
         Target = t;
     }
 
-    public void SetIdle()
+    public void Idle()
     {
         ResetNavigation();
         SetTargetPosition(transform.position);
