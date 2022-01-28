@@ -7,16 +7,18 @@ public class EnemyStateBase : MonoBehaviour
 {
     public enum AnimationState
     {
+        None,
         Idle,
-        Run
+        Run,
+        Jump
     }
 
     public abstract class StateBase : IState
     {
-        protected Animator _animator;
+        protected AnimatorController _animator;
         private static readonly int s_State = Animator.StringToHash("_State");
 
-        protected StateBase(Animator animator)
+        protected StateBase(AnimatorController animator)
         {
             _animator = animator;
         }
@@ -27,9 +29,9 @@ public class EnemyStateBase : MonoBehaviour
 
         public virtual void OnEnter()
         {
-            if (_animator == null) return;
+            if (!_animator.HasAnimator()) return;
 
-            _animator.SetInteger(s_State, (int)GetAnimationState());
+            _animator.Getanimator().SetInteger(s_State, (int)GetAnimationState());
         }
 
         public abstract void OnExit();

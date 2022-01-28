@@ -7,23 +7,28 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
+          <e p="AnimatorController.cs" t="Include" />
           <e p="Behaviours" t="Include">
             <e p="InputHandler.cs" t="Include" />
             <e p="ObjectTransparencyHandler.cs" t="Include" />
           </e>
+          <e p="DebugHelper.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerVisuals.cs" t="Include" />
             <e p="States" t="Include">
+              <e p="PlayerChangeShapeState.cs" t="Include" />
               <e p="PlayerIdleState.cs" t="Include" />
+              <e p="PlayerJumpState.cs" t="Include" />
               <e p="PlayerMoveState.cs" t="Include" />
               <e p="PlayerStateBase.cs" t="Include" />
               <e p="PlayerStates.cs" t="Include" />
             </e>
           </e>
-          <e p="PlayerMovement.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="Channels" t="Include">
               <e p="Input" t="Include">
@@ -33,7 +38,9 @@
                   <e p="InputActionTypes.cs" t="Include" />
                 </e>
               </e>
+              <e p="PlayerChannel.cs" t="Include" />
             </e>
+            <e p="PlayerShapeInfo.cs" t="Include" />
           </e>
           <e p="State" t="Include">
             <e p="IState.cs" t="Include" />

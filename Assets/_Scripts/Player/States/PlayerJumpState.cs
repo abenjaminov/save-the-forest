@@ -1,30 +1,26 @@
 using UnityEngine;
-using static EnemyStateBase;
-using AnimationState = EnemyStateBase.AnimationState;
 
 namespace _Scripts.Player.States
 {
-    public class PlayerIdleState : StateBase
+    public class PlayerJumpState : PlayerStateBase
     {
         private PlayerMovement _PlayerMovement;
         
-        public PlayerIdleState(AnimatorController animator, PlayerMovement playerMovement) : base(animator)
+        public PlayerJumpState(AnimatorController animator, PlayerMovement playerMovement) : base(animator)
         {
             _PlayerMovement = playerMovement;
         }
 
-        protected override AnimationState GetAnimationState()
+        protected override PlayerAnimationState GetAnimationState()
         {
-            return AnimationState.Idle;
+            return PlayerAnimationState.Jump;
         }
 
         public override void OnEnter()
         {
             base.OnEnter();
-            
-            _PlayerMovement.Idle();
+            _PlayerMovement.Jump();
         }
-
         public override void Tick()
         {
             
