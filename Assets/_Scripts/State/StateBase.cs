@@ -11,7 +11,9 @@ namespace _Scripts
         Run,
         Jump,
         Attack1,
-        Attack2
+        Attack2,
+        Hit,
+        Die
     }
     public abstract class StateBase : IState
     {
