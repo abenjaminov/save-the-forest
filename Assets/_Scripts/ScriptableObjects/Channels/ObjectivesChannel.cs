@@ -10,8 +10,7 @@ namespace _Scripts.ScriptableObjects.Channels
     public class ObjectivesChannel : ScriptableObject
     {
         [SerializeField] private UIChannel _UIChannel;
-        
-        public UnityAction<GameAction> OnActionEvent;
+
         public UnityAction<ActionObjective> OnObjectiveCompleteEvent;
         public UnityAction<ActionObjective> OnObjectiveActiveEvent;
 
@@ -19,11 +18,6 @@ namespace _Scripts.ScriptableObjects.Channels
         {
             OnObjectiveCompleteEvent?.Invoke(obj);
             _UIChannel.OnHideHintEvent(obj.GUID);
-        }
-
-        public void OnAction(GameAction gameAction)
-        {
-            OnActionEvent?.Invoke(gameAction);
         }
 
         public void OnObjectiveActive(ActionObjective objective)

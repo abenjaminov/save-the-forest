@@ -1,4 +1,6 @@
-﻿using _Scripts.ScriptableObjects.Channels.Input;
+﻿using _Scripts.ScriptableObjects;
+using _Scripts.ScriptableObjects.Channels;
+using _Scripts.ScriptableObjects.Channels.Input;
 using _Scripts.ScriptableObjects.Channels.Input.Models;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,18 +9,36 @@ namespace _Scripts.Input
 {
     public class InputManager : MonoBehaviour
     {
+        [SerializeField] private GameChannel _GameChannel;
         [SerializeField] private InputChannel _inputChannel;
+
+        private PlayerInput _PlayerInput;
 
         private void Awake()
         {
-            PlayerInput playerInput = GetComponent<PlayerInput>();
-            var attack1 = playerInput.actions.FindAction("Attack1");
+            _GameChannel.OnShowStoryEvent += OnShowStoryEvent;
+            _GameChannel.OnStoryToldEvent += OnStoryToldEvent;
+            
+            _PlayerInput = GetComponent<PlayerInput>();
+            var attack1 = _PlayerInput.actions.FindAction("Attack1");
             attack1.started += Attack1_started;
             attack1.canceled += Attack1_canceled;
-
-            var attack2 = playerInput.actions.FindAction("Attack2");
+            
+            var attack2 = _PlayerInput.actions.FindAction("Attack2");
             attack2.started += Attack2_started;
             attack2.canceled += Attack2_canceled;
+        }
+
+        private void OnStoryToldEvent(StoryItem arg0)
+        {
+            _PlayerInput.actions.Enable();
+            _PlayerInput.actions.FindAction("SkipStory").Disable();
+        }
+
+        private void OnShowStoryEvent(StoryItem arg0)
+        {
+            _PlayerInput.actions.Disable();
+            _PlayerInput.actions.FindAction("SkipStory").Enable();
         }
 
         private void Attack1_canceled(InputAction.CallbackContext obj)
@@ -72,6 +92,11 @@ namespace _Scripts.Input
             _inputChannel.OnAction(InputActionTypes.Jump, null);
         }
 
+        void OnSkipStory(InputValue inputValue)
+        {
+            _inputChannel.OnAction(InputActionTypes.SkipStory, null);
+		}
+		
         void OnShiftToHuman(InputValue inputValue)
         {
             var inputOptions = new InputActionOptions()

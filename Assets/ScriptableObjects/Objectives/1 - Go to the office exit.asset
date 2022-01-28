@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1130eca8d998410b97eab1b87f6a1949, type: 3}
   m_Name: 1 - Go to the office exit
   m_EditorClassIdentifier: 
-  GUID: 4353c7b9-b516-4d05-8daa-cce9656e5db0
+  _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
-  Description: Go to the office exit
-  NextObjective: {fileID: 11400000, guid: 06aee404b492be943aa7f4485e811c4b, type: 2}
+  StoryWhenActivated: {fileID: 11400000, guid: 728399f219be73841b28be330b5cee87, type: 2}
+  StoryWhenCompleted: {fileID: 11400000, guid: ac1b89699801bdb45b8a705d7c9385df, type: 2}
   ActionInfos:
   - GameAction: {fileID: 11400000, guid: fa11d0d15c0bb0c4598c795269460f3c, type: 2}
-    Happened: 1
+    Happened: 0
+  GUID: 4353c7b9-b516-4d05-8daa-cce9656e5db0
+  Description: Go to the office exit
+  NextObjective: {fileID: 11400000, guid: 06aee404b492be943aa7f4485e811c4b, type: 2}

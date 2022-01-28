@@ -50,6 +50,7 @@
           <e p="ScriptableObjects" t="Include">
             <e p="Channels" t="Include">
               <e p="CombatChannel.cs" t="Include" />
+              <e p="GameChannel.cs" t="Include" />
               <e p="Input" t="Include">
                 <e p="InputChannel.cs" t="Include" />
                 <e p="Models" t="Include">
@@ -67,6 +68,7 @@
               <e p="ActionObjective.cs" t="Include" />
             </e>
             <e p="PlayerShapeInfo.cs" t="Include" />
+            <e p="StoryItem.cs" t="Include" />
           </e>
           <e p="State" t="Include">
             <e p="IState.cs" t="Include" />
@@ -79,6 +81,7 @@
             <e p="Models" t="Include">
               <e p="Hint.cs" t="Include" />
             </e>
+            <e p="StoryPanel.cs" t="Include" />
           </e>
         </e>
         <e p="JMO Assets" t="Include">
