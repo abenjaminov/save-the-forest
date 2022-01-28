@@ -16,9 +16,14 @@ namespace _Scripts.Player.States
             return AnimationStateEnum.Attack2;
         }
 
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            _combat.AttackInSeconds();
+        }
+
         public override void Tick()
         {
-            _combat.AttackInSeconds();
         }
 
         public override void OnExit()

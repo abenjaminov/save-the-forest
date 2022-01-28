@@ -32,7 +32,7 @@ namespace _Scripts.Player.States
 
         private void Awake()
         {
-            _StateMachine = new StateMachine(true);
+            _StateMachine = new StateMachine();
             _playerMovement = GetComponent<PlayerMovement>();
             _animator = GetComponent<AnimatorController>();
             _PlayerVisuals = GetComponent<PlayerVisuals>();
