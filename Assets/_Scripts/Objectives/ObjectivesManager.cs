@@ -12,9 +12,12 @@ namespace _Scripts.Objectives
 
         private void Awake()
         {
-            FirstObjective.Activate();
-            
             _ObjectivesChannel.OnObjectiveCompleteEvent += OnObjectiveCompleteEvent;
+        }
+
+        private void Start()
+        {
+            FirstObjective.Activate();
         }
 
         private void OnObjectiveCompleteEvent(ActionObjective objective)
