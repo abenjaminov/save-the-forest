@@ -56,7 +56,7 @@ public class EnemyStates : MonoBehaviour
         _StateMachine.AddTransition(_followState, shouldFollow, _idleState, () =>
         {
 
-        }, "From Patrol To Follow State");
+        }, "From Idle To Follow State");
 
         _StateMachine.SetState(_patrolState);
     }

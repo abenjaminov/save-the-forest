@@ -29,6 +29,7 @@ public class EnemyIdleState : StateBase
     public override void Tick()
     {
         IdleTime += Time.deltaTime;
+        _EnemyMovement.transform.Rotate(Vector3.up, Mathf.Sign(Mathf.Sin(IdleTime * 2)) * 0.25f);
     }
 
     public override void OnExit()
