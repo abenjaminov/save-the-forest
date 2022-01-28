@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Objectives.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Objectives/ObjectivesManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Objectives/ObjectivesManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Shaders/TransparentShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Shaders/TransparentShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/58 WHITE-LPUP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/58 WHITE-LPUP.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Buildings_M/parts/house-wall-window-two.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Buildings_M/parts/house-wall-window-two.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +69,11 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/GoToLocationObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/CombatChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Objectives/ObjectivesManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" />
       </list>
     </option>
   </component>
