@@ -100,7 +100,6 @@ public class EnemyMovement : MonoBehaviour
         if(Target != null)
         {
             SetTargetPosition(Target.position);
-        }else
-            Patrol();
+        }
     }
 }

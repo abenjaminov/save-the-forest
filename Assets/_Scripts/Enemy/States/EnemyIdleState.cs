@@ -7,6 +7,7 @@ using UnityEngine;
 public class EnemyIdleState : StateBase
 {
     private EnemyMovement _EnemyMovement;
+    public float IdleTime = 0;
 
     public EnemyIdleState(AnimatorController animator, EnemyMovement EnemyMovement) : base(animator)
     {
@@ -21,17 +22,17 @@ public class EnemyIdleState : StateBase
     public override void OnEnter()
     {
         base.OnEnter();
-
+        IdleTime = 0;
         _EnemyMovement.Idle();
     }
 
     public override void Tick()
     {
-
+        IdleTime += Time.deltaTime;
     }
 
     public override void OnExit()
     {
-
+        IdleTime = 0;
     }
 }
