@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     public List<Transform> PatrolRoute;
     public int PatrolRouteIndex = -1;
     public Transform Target;
+    public float PatrolPosSensitivity = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +47,7 @@ public class EnemyMovement : MonoBehaviour
             foreach (var t in PatrolRoute)
             {
                 var dist = Vector3.Distance(transform.position, t.position);
-                if (dist < 0.3f)
+                if (dist < PatrolPosSensitivity)
                 {
                     minDistance = dist;
                     break;
@@ -63,12 +64,10 @@ public class EnemyMovement : MonoBehaviour
         {
             minDistance = Vector3.Distance(transform.position, PatrolRoute[PatrolRouteIndex].position);
         }
-        print(minDistance);
-        print(index);
 
         //if arrived start patrol, move to next
         //if patrolling go to next point until touching and then go to next
-        if (minDistance < 0.3)
+        if (minDistance < PatrolPosSensitivity)
         {
             if (PatrolRouteIndex == -1)
                 PatrolRouteIndex = index;
