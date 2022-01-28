@@ -23,9 +23,9 @@ namespace _Scripts.UI
             _UIChannel.OnHideHintEvent += OnHideHintEvent;
         }
 
-        private void OnHideHintEvent(Hint arg0)
+        private void OnHideHintEvent(string guid)
         {
-            ActiveHints = ActiveHints.Where(x => x.HintGuid != arg0.HintGuid).ToList();
+            ActiveHints = ActiveHints.Where(x => x.HintGuid != guid).ToList();
             UpdateUI();
         }
 

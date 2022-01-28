@@ -9,16 +9,16 @@ namespace _Scripts.ScriptableObjects.Channels
     public class UIChannel : ScriptableObject
     {
         public UnityAction<Hint> OnShowHintEvent;
-        public UnityAction<Hint> OnHideHintEvent;
+        public UnityAction<string> OnHideHintEvent;
 
         public void OnShowHint(Hint hint)
         {
             OnShowHintEvent?.Invoke(hint);
         }
 
-        public void OnHideHint(Hint hint)
+        public void OnHideHint(string guid)
         {
-            OnHideHintEvent?.Invoke(hint);
+            OnHideHintEvent?.Invoke(guid);
         }
     }
 }

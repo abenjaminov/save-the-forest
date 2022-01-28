@@ -8,7 +8,7 @@ namespace _Scripts.Objectives
     public class ObjectivesManager : MonoBehaviour
     {
         [SerializeField] private ObjectivesChannel _ObjectivesChannel;
-        [SerializeField] private Objective FirstObjective;
+        [SerializeField] private ActionObjective FirstObjective;
 
         private void Awake()
         {
@@ -17,7 +17,7 @@ namespace _Scripts.Objectives
             _ObjectivesChannel.OnObjectiveCompleteEvent += OnObjectiveCompleteEvent;
         }
 
-        private void OnObjectiveCompleteEvent(Objective objective)
+        private void OnObjectiveCompleteEvent(ActionObjective objective)
         {
             var nextObjective = objective.NextObjective;
             

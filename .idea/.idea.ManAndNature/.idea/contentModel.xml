@@ -61,10 +61,10 @@
               <e p="PlayerChannel.cs" t="Include" />
               <e p="UIChannel.cs" t="Include" />
             </e>
+            <e p="GameAction.cs" t="Include" />
             <e p="Objectives" t="Include">
               <e p="ActionInfo.cs" t="Include" />
               <e p="ActionObjective.cs" t="Include" />
-              <e p="Objective.cs" t="Include" />
             </e>
             <e p="PlayerShapeInfo.cs" t="Include" />
           </e>

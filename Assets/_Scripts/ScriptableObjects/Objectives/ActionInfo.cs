@@ -6,7 +6,7 @@ namespace _Scripts.ScriptableObjects.Objectives
     [Serializable]
     public class ActionInfo
     {
-        public string ActionGuid;
+        public GameAction GameAction;
         [HideInInspector] public bool Happened;
     }
 }

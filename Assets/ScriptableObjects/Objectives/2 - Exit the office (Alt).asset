@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1130eca8d998410b97eab1b87f6a1949, type: 3}
   m_Name: 2 - Exit the office (Alt)
   m_EditorClassIdentifier: 
-  GUID: 15b0a83a-cd64-4542-9aed-512771a650ca
+  GUID: 6c0ecf63-f724-407f-b863-09cf852b391e
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
   Description: Exit the office (Alt)
   NextObjective: {fileID: 0}
-  ActionInfos: []
+  ActionInfos:
+  - GameAction: {fileID: 11400000, guid: 801d32a8c8a57e844acdc9b32c15d4b6, type: 2}
+    Happened: 1
