@@ -14,10 +14,12 @@
             <e p="Location.cs" t="Include" />
             <e p="ObjectTransparencyHandler.cs" t="Include" />
           </e>
+          <e p="Combat.cs" t="Include" />
           <e p="DebugHelper.cs" t="Include" />
           <e p="Enemy" t="Include">
             <e p="EnemyMovement.cs" t="Include" />
             <e p="States" t="Include">
+              <e p="EnemyAttackState.cs" t="Include" />
               <e p="EnemyFollowState.cs" t="Include" />
               <e p="EnemyIdleState.cs" t="Include" />
               <e p="EnemyPatrolState.cs" t="Include" />

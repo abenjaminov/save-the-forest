@@ -20,19 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerInteractions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerInteractions.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/Exit the office.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/Exit the office.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy/EnemyStates.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/PlayerChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/PlayerChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +71,11 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/UIChannel.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerInteractions.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/PlayerChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" />
       </list>
     </option>
   </component>

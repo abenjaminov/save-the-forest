@@ -42,7 +42,7 @@ namespace _Scripts.Behaviours
                 var relevantHits = hits.Where(x => x.collider != null && 
                                                   x.collider.gameObject != _firstEdge.gameObject && 
                                                   x.collider.gameObject != _secondEdge.gameObject &&
-                                                  x.collider);
+                                                  !x.collider.CompareTag("NotTransparent"));
                 foreach (var hit in relevantHits)
                 {
                     if (hit.collider.TryGetComponent(typeof(MeshRenderer), out var component))
