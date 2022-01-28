@@ -13,7 +13,7 @@ namespace _Scripts.Behaviours
         {
             if (!other.CompareTag("Player")) return;
             
-            _ObjectivesChannel.OnEnterLocation(LocationGuid); 
+            _ObjectivesChannel.OnActionEvent(LocationGuid); 
         }
     }
 }

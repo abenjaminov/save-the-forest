@@ -7,7 +7,7 @@ namespace _Scripts.ScriptableObjects.Channels
     [CreateAssetMenu(fileName = "Objectives Channel", menuName = "Channels/Objectives", order = 0)]
     public class ObjectivesChannel : ScriptableObject
     {
-        public UnityAction<string> OnEnterLocationEvent;
+        public UnityAction<string> OnActionEvent;
         public UnityAction<Objective> OnObjectiveCompleteEvent;
         public UnityAction<Objective> OnObjectiveActiveEvent;
 
@@ -18,9 +18,9 @@ namespace _Scripts.ScriptableObjects.Channels
             OnObjectiveCompleteEvent?.Invoke(obj);
         }
 
-        public void OnEnterLocation(string locationGuid)
+        public void s(string locationGuid)
         {
-            OnEnterLocationEvent?.Invoke(locationGuid);
+            OnActionEvent?.Invoke(locationGuid);
         }
 
         public void OnObjectiveActive(Objective objective)

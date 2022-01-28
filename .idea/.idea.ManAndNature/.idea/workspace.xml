@@ -20,14 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionInfo.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cameras.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cameras.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kremer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kremer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/Exit the office.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/Exit the office.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/GoToLocationObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/GoToLocationObjective.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,15 +73,17 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/States/PlayerStateBase.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Enemy/EnemyPatrolState.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/State/StateBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/GoToLocationObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/CombatChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/InputChannel.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Objectives/ObjectivesManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ObjectTransparencyHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/GoToLocationObjective.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" />
       </list>
     </option>
   </component>
@@ -224,5 +231,63 @@
     </state>
     <state x="-1282" y="28" width="882" height="1008" key="search.everywhere.popup/0.0.1280.680/-1680.27.1680.1010@-1680.27.1680.1010" timestamp="1643380131357" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643372335273" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\Centrical\ManAndNature\Assets\_Scripts\Behaviours\Location.cs" initialLine="13">
+            <startOffsets>
+              <option value="400" />
+            </startOffsets>
+            <endOffsets>
+              <option value="432" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\Users\Centrical\ManAndNature\Assets\_Scripts\Behaviours\Location.cs" initialLine="15">
+            <startOffsets>
+              <option value="466" />
+            </startOffsets>
+            <endOffsets>
+              <option value="513" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\Centrical\ManAndNature\Assets\_Scripts\ScriptableObjects\Objectives\GoToLocationObjective.cs" initialLine="22">
+            <startOffsets>
+              <option value="758" />
+            </startOffsets>
+            <endOffsets>
+              <option value="802" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Users\Centrical\ManAndNature\Assets\_Scripts\ScriptableObjects\Objectives\ActionObjective.cs" initialLine="24">
+            <startOffsets>
+              <option value="645" />
+            </startOffsets>
+            <endOffsets>
+              <option value="722" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

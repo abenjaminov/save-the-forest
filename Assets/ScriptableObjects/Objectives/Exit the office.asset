@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
   Description: Exit the building
-  LocationGuid: a6d1ef35-dc0e-4b46-be3a-746233a563e9
+  NextObjective: {fileID: 0}
+  ActionInfos:
+  - ActionGuid: a6d1ef35-dc0e-4b46-be3a-746233a563e9
+    Happened: 0
