@@ -174,7 +174,8 @@ MonoBehaviour:
   OnDestroyedAction: {fileID: 11400000, guid: 70fef2299ce0141429d7510bb725d023, type: 2}
   _CombatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   _healthComponent: {fileID: 2007305995789947163}
-  _DestroyedEffect: {fileID: 139873927759835360}
+  _DestroyedEffects:
+  - {fileID: 139873927759835360}
 --- !u!1001 &1783889718777572646
 PrefabInstance:
   m_ObjectHideFlags: 0

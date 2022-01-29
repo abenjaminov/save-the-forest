@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 3 - Arive at receive bear ability location action
   m_EditorClassIdentifier: 
   Name: Receive bear ability
-  Hint: Interact with the light (Alt)
+  Hint: Go to the light
   Guid: 5627a8d5-d2a0-47d9-99e6-7e1ffcec342a

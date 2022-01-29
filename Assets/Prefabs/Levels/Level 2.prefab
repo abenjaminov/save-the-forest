@@ -71596,7 +71596,8 @@ MonoBehaviour:
   OnDestroyedAction: {fileID: 11400000, guid: b7467ddd14af58544844b448ccaf056d, type: 2}
   _CombatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   _healthComponent: {fileID: 6864000794361508194}
-  _DestroyedEffect: {fileID: 7854069096949681613}
+  _DestroyedEffects:
+  - {fileID: 7854069096949681613}
 --- !u!114 &1963539629543090832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90991,7 +90992,8 @@ MonoBehaviour:
   OnDestroyedAction: {fileID: 11400000, guid: b7467ddd14af58544844b448ccaf056d, type: 2}
   _CombatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   _healthComponent: {fileID: 7870665380887296300}
-  _DestroyedEffect: {fileID: 5973046699701610198}
+  _DestroyedEffects:
+  - {fileID: 5973046699701610198}
 --- !u!114 &7559179312427584787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106013,7 +106015,8 @@ MonoBehaviour:
   OnDestroyedAction: {fileID: 11400000, guid: b7467ddd14af58544844b448ccaf056d, type: 2}
   _CombatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   _healthComponent: {fileID: 1254926715976998839}
-  _DestroyedEffect: {fileID: 2996809981634418878}
+  _DestroyedEffects:
+  - {fileID: 2996809981634418878}
 --- !u!114 &6674437271599403041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106113,7 +106116,8 @@ MonoBehaviour:
   OnDestroyedAction: {fileID: 11400000, guid: b7467ddd14af58544844b448ccaf056d, type: 2}
   _CombatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   _healthComponent: {fileID: 8134407610414370347}
-  _DestroyedEffect: {fileID: 4807091576079499561}
+  _DestroyedEffects:
+  - {fileID: 4807091576079499561}
 --- !u!114 &123457050823857747
 MonoBehaviour:
   m_ObjectHideFlags: 0
