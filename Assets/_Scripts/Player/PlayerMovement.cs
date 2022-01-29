@@ -1,3 +1,4 @@
+using _Scripts.Player;
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,19 +12,15 @@ namespace _Scripts
         [SerializeField] float gravity = 20f;
         private float horizontalSpeed;
         private float verticalSpeed;
-        CharacterController characterController;
+        private CharacterController characterController;
 
         Vector3 playerMovment;
-
-        float distanceGround;
         bool isGrounded = false;
 
         private void Awake()
         {
-            characterController = GetComponent<CharacterController>();
             horizontalSpeed = 0;
-
-            distanceGround = GetComponent<Collider>().bounds.extents.y;
+            characterController = GetComponent<CharacterController>();
         }
         
         private void Update()
@@ -31,9 +28,20 @@ namespace _Scripts
             Move();
         }
 
+        public void RefreshCharatercontroller(PlayershapeInfo info)
+        {
+            var shapeCharacterController = GetComponent<CharacterController>();
+
+            shapeCharacterController.height = info.Height;
+            shapeCharacterController.radius = info.Radius;
+            shapeCharacterController.center = info.Center;
+            moveSpeed = info.moveSpeed;
+            jumpSpeed = info.jumpSpeed;
+        }
+
         private void FixedUpdate()
         {
-            if (!Physics.Raycast(transform.position, -Vector3.up, distanceGround + 0.1f))
+            if (!Physics.Raycast(transform.position, -Vector3.up, 1.6f))
             {
                 isGrounded = false;
             }
@@ -47,7 +55,7 @@ namespace _Scripts
         {
             playerMovment.Normalize();
 
-            if (!isGrounded && verticalSpeed >= -gravity)
+            if (verticalSpeed >= -gravity)
             {
                 verticalSpeed -= gravity * Time.deltaTime;
             }
@@ -89,3 +97,5 @@ namespace _Scripts
         }
     }
 }
+
+

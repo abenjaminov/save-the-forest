@@ -12,17 +12,29 @@ namespace _Scripts.Player
         Rabbit
     }
     
+    [Serializable]
+    public class PlayershapeInfo
+    {
+        public PlayerShape Shape;
+        public GameObject Visuals;
+        public Vector3 Center;
+        public float Radius;
+        public float Height;
+        public float moveSpeed;
+        public float jumpSpeed;
+    }
+
     public class PlayerVisuals : MonoBehaviour
     {
         [SerializeField] private ParticleSystem _changeShapeEffect;
 
-        [SerializeField] private GameObject HumanVisuals;
-        [SerializeField] private GameObject BearVisuals;
-        [SerializeField] private GameObject RabbitVisuals;
+        [SerializeField] private PlayershapeInfo HumanVisuals;
+        [SerializeField] private PlayershapeInfo BearVisuals;
+        [SerializeField] private PlayershapeInfo RabbitVisuals;
 
-        private Dictionary<PlayerShape, GameObject> ShapesMap = new Dictionary<PlayerShape, GameObject>();
+        private Dictionary<PlayerShape, PlayershapeInfo> ShapesMap = new Dictionary<PlayerShape, PlayershapeInfo>();
         
-        private GameObject _currentVisuals;
+        [HideInInspector] public PlayershapeInfo CurrentVisuals;
         public PlayerShape CurrentShape;
 
         private void Awake()
@@ -31,7 +43,7 @@ namespace _Scripts.Player
             ShapesMap.Add(PlayerShape.Bear, BearVisuals);
             ShapesMap.Add(PlayerShape.Rabbit, RabbitVisuals);
 
-            _currentVisuals = ShapesMap[CurrentShape];
+            CurrentVisuals = ShapesMap[CurrentShape];
         }
 
         public void ChangeShape(PlayerShape shape)
@@ -43,9 +55,10 @@ namespace _Scripts.Player
 
         private void ShapeShift(PlayerShape shape)
         {
-            ShapesMap[CurrentShape].SetActive(false);
+            ShapesMap[CurrentShape].Visuals.SetActive(false);
             CurrentShape = shape;
-            ShapesMap[CurrentShape].SetActive(true);
+            ShapesMap[CurrentShape].Visuals.SetActive(true);
+            CurrentVisuals = ShapesMap[CurrentShape];
         }
     }
 }
