@@ -16,7 +16,11 @@ MonoBehaviour:
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
   StoryWhenActivated: {fileID: 11400000, guid: e56efde4f2a8e8742909cad00c4f46f7, type: 2}
   StoryWhenCompleted: {fileID: 0}
-  ActionInfos: []
+  ActionInfos:
+  - GameAction: {fileID: 11400000, guid: 34b5bf62b9b745a4ca8bf4fe1db65733, type: 2}
+    RepeatAmount: 1
+    AmountsLeft: 0
+    Happened: 0
   GUID: ddfe14a6-b129-48a9-a404-0e659ee6165a
   Description: Enter the forest center
   NextObjective: {fileID: 11400000, guid: 9a54aa4abda3b4649867d31f4d870111, type: 2}

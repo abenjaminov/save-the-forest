@@ -17,7 +17,7 @@ namespace _Scripts.Objectives
 
         private void Start()
         {
-            FirstObjective.Activate();
+            FirstObjective?.Activate();
         }
 
         private void OnObjectiveCompleteEvent(ActionObjective objective)

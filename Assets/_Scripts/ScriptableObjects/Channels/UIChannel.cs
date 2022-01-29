@@ -1,3 +1,4 @@
+using _Scripts.Player;
 using _Scripts.ScriptableObjects.Objectives;
 using _Scripts.UI.Models;
 using UnityEngine;
@@ -10,7 +11,6 @@ namespace _Scripts.ScriptableObjects.Channels
     {
         public UnityAction<Hint> OnShowHintEvent;
         public UnityAction<string> OnHideHintEvent;
-
         public void OnShowHint(Hint hint)
         {
             OnShowHintEvent?.Invoke(hint);

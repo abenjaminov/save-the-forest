@@ -28,6 +28,7 @@ namespace _Scripts.Player
     public class PlayerVisuals : MonoBehaviour
     {
         [SerializeField] private GameChannel _GameChannel;
+        [SerializeField] private PlayerChannel _playerChannel;
         [SerializeField] private ParticleSystem _changeShapeEffect;
 
         [SerializeField] private PlayershapeInfo HumanVisuals;
@@ -74,6 +75,7 @@ namespace _Scripts.Player
             _changeShapeEffect.Play(true);
             
             ShapeShift(shape);
+            _playerChannel.OnPlayerChangeShape(shape);
         }
 
         private void ShapeShift(PlayerShape shape)

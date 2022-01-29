@@ -17,7 +17,7 @@ MonoBehaviour:
   StoryWhenActivated: {fileID: 11400000, guid: 372d1d958ff45904ba39f4aeeacd2f28, type: 2}
   StoryWhenCompleted: {fileID: 0}
   ActionInfos:
-  - GameAction: {fileID: 11400000, guid: e8073849a72b11840a890af440292578, type: 2}
+  - GameAction: {fileID: 11400000, guid: 70fef2299ce0141429d7510bb725d023, type: 2}
     RepeatAmount: 5
     AmountsLeft: 5
     Happened: 0
