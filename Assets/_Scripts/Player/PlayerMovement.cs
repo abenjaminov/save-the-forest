@@ -7,6 +7,7 @@ namespace _Scripts
 {
     public class PlayerMovement : MonoBehaviour
     {
+        private Health _Health;
         [SerializeField] float moveSpeed = 5f;
         [SerializeField] float jumpSpeed = 10f;
         [SerializeField] float gravity = 20f;
@@ -19,6 +20,7 @@ namespace _Scripts
 
         private void Awake()
         {
+            _Health = GetComponent<Health>();
             horizontalSpeed = 0;
             characterController = GetComponent<CharacterController>();
         }
@@ -26,6 +28,11 @@ namespace _Scripts
         private void Update()
         {
             Move();
+
+            if (transform.position.y < -50)
+            {
+                _Health.Die();
+            }
         }
 
         public void RefreshCharatercontroller(PlayershapeInfo info)

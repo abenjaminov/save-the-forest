@@ -1,11 +1,16 @@
+using System;
 using _Scripts;
 using Assets._Scripts;
 using System.Collections;
 using System.Collections.Generic;
+using _Scripts.ScriptableObjects.Channels;
 using UnityEngine;
 
 public class Combat : MonoBehaviour
 {
+    [SerializeField] private CombatChannel _CombatChannel;
+    
+    private Health _health;
     public string AttackName = "Attack";
     public float Damage;
     public float AttackRadius;
@@ -17,15 +22,31 @@ public class Combat : MonoBehaviour
     public bool ShowAttackOutline;
     public float Knockback;
 
-    // Start is called before the first frame update
-    void Start()
+    public bool _canAttack;
+
+    private void OnDestroy()
     {
+        _CombatChannel.DeathEvent -= DeathEvent;
+    }
+
+    private void Awake()
+    {
+        _canAttack = true;
+        _health = GetComponent<Health>();
+        _CombatChannel.DeathEvent += DeathEvent;
+    }
+
+    private void DeathEvent(Health arg0)
+    {
+        if(arg0.gameObject != this.gameObject || arg0.HP > 0) return;
         
+        _canAttack = false;
     }
 
     public void Attack()
     {
-        print("attack");
+        if (!_canAttack) return;
+        
         Collider[] hits = Physics.OverlapSphere(transform.position + transform.forward * DirMultiplier
             , AttackRadius);
         showAttack = true;

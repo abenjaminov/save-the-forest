@@ -45,8 +45,8 @@ public class EnemyStates : MonoBehaviour
 
         var shouldIdle = new Func<bool>(() => !_followState.TargetVisible(transform.position, 6) && _idleState.IdleTime < 3f);
         var shouldPatrol = new Func<bool>(() => _idleState.IdleTime >= 3f);
-        var shouldAttack = new Func<bool>(() => _followState.TargetVisible(transform.position, 3));
-        var shouldFollow = new Func<bool>(() => _followState.TargetVisible(transform.position, 6) && !shouldAttack());
+        var shouldAttack = new Func<bool>(() => _followState.TargetVisible(transform.position, 4));
+        var shouldFollow = new Func<bool>(() => _followState.TargetVisible(transform.position, 7) && !shouldAttack());
 
         _StateMachine.AddTransition(_idleState, shouldIdle, _followState, () =>
         {

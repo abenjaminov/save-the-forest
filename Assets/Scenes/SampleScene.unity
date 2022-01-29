@@ -757,26 +757,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3821570655867187693, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116340875165379292, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: HP
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4221699048551217378, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4221699048551217381, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: _GameChannel
-      value: 
-      objectReference: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
-    - target: {fileID: 4221699048551217388, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: _GameChannel
-      value: 
-      objectReference: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
     - target: {fileID: 4221699048551217389, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -821,30 +805,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4894765635061706559, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: AttackRadius
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066923325358268922, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -3592785139662684940, guid: 3ff6943570a0116448d4d8586d0b5540, type: 3}
-    - target: {fileID: 6285557311956995304, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121107560820831800, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7434475595933776466, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8698557372715088429, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -5006354617323130127, guid: ae5bab76969162141923bf15386f3f35, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7385dd94847130148989b2be1e5fc32d, type: 3}
 --- !u!1 &2087470126 stripped
@@ -859,6 +819,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2060429918085370424, guid: 8fa65d0114b12454da1da8b7aa2a6416, type: 3}
+      propertyPath: _CombatChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
     - target: {fileID: 5674314899191816935, guid: 8fa65d0114b12454da1da8b7aa2a6416, type: 3}
       propertyPath: m_Name
       value: Level 5
@@ -1046,6 +1010,10 @@ PrefabInstance:
       propertyPath: _CombatChannel
       value: 
       objectReference: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
+    - target: {fileID: 2523227680512064460, guid: e38c4a177c6076341a9649724b3d69a6, type: 3}
+      propertyPath: _EndGameAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 95d787dbd751f45418fd0a580a1fad79, type: 2}
     - target: {fileID: 2523227680512064460, guid: e38c4a177c6076341a9649724b3d69a6, type: 3}
       propertyPath: _SwitchLevelInfos.Array.size
       value: 4

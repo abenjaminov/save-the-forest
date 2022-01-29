@@ -258,14 +258,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6377c542cf2ec0a42a8ce9fcbc0efa7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _CombatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   AttackName: Attack1
   Damage: 1
-  AttackRadius: 1
+  AttackRadius: 2
   AttackInterval: 0
   FirstAttackDelay: 0.2
   DirMultiplier: 0
   FilterTag: Player
   ShowAttackOutline: 0
+  Knockback: 0
+  _canAttack: 0
 --- !u!114 &4116340875165379292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ca622e6b07be84da76b63e0e31a95e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
+  HP: 5
   _combatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   invincible: 0
 --- !u!114 &7247304853269924588
@@ -293,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6377c542cf2ec0a42a8ce9fcbc0efa7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _CombatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   AttackName: Attack2
   Damage: 2
   AttackRadius: 5
@@ -301,6 +305,8 @@ MonoBehaviour:
   DirMultiplier: 0
   FilterTag: Player
   ShowAttackOutline: 0
+  Knockback: 0
+  _canAttack: 0
 --- !u!143 &6071922716842253322
 CharacterController:
   m_ObjectHideFlags: 0

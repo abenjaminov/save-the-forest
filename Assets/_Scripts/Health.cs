@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
     }
 
     [ContextMenu("Die")]
-    private void Die()
+    public void Die()
     {
         Hit(HP);
     }
