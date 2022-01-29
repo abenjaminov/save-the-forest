@@ -9,7 +9,10 @@ public class Combat : MonoBehaviour
     public float AttackRadius;
     public float AttackInterval;
     public float FirstAttackDelay;
+    public float DirMultiplier;
     public string FilterTag = "";
+    bool showAttack = false;
+    public bool ShowAttackOutline;
 
     // Start is called before the first frame update
     void Start()
@@ -17,15 +20,11 @@ public class Combat : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Attack()
     {
-        Collider[] hits = Physics.OverlapSphere(transform.position, AttackRadius);
+        Collider[] hits = Physics.OverlapSphere(transform.position + transform.forward * DirMultiplier
+            , AttackRadius);
+        showAttack = true;
         foreach(var c in hits)
         {
             Health h;
@@ -50,5 +49,16 @@ public class Combat : MonoBehaviour
     public void StopRepeatedAttack()
     {
         CancelInvoke();
+    }
+    public void OnDrawGizmos()
+    {
+        print("gizmos");
+        if (showAttack && Application.isEditor && ShowAttackOutline)
+        {
+            print("test");
+            Gizmos.DrawSphere(transform.position
+            + transform.forward * DirMultiplier, AttackRadius);
+            showAttack = false;
+        }
     }
 }

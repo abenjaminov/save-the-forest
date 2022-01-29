@@ -11,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
     public int PatrolRouteIndex = -1;
     public Transform Target;
     public float PatrolPosSensitivity = 0.5f;
+    public bool follow = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class EnemyMovement : MonoBehaviour
     {
         ResetNavigation();
         Target = t;
+        follow = true;
     }
 
     public void Idle()
@@ -36,7 +38,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void Patrol()
     {
-        Target = null;
+        follow = false;
         Vector3 closestPos = PatrolRoute[0].position;
         var minDistance = Mathf.Infinity;
         var index = 0;
@@ -85,19 +87,22 @@ public class EnemyMovement : MonoBehaviour
 
     public void ResetNavigation()
     {
-        Target = null;
+        follow = false;
         PatrolRouteIndex = -1;
     }
 
     public void LookAt(Transform t)
     {
-        transform.LookAt(t);
+        Vector3 lookPos = t.position - transform.position;
+        lookPos.y = 0;
+        Quaternion rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 0.15f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Target != null)
+        if(Target != null && follow)
         {
             SetTargetPosition(Target.position);
         }
