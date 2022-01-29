@@ -77,7 +77,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564d2b1ed941ad2459b0d63813a18f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PatrolRoute: []
+  PatrolRoute:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   PatrolRouteIndex: -1
   Target: {fileID: 0}
   PatrolPosSensitivity: 0.5
