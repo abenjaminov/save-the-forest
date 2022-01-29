@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1130eca8d998410b97eab1b87f6a1949, type: 3}
-  m_Name: 6 - Go to level 3
+  m_Name: 10 - Destroy the mega bulldozer
   m_EditorClassIdentifier: 
   _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
   StoryWhenActivated: {fileID: 0}
   StoryWhenCompleted: {fileID: 0}
   ActionInfos:
-  - GameAction: {fileID: 11400000, guid: 835bc77e67e661443acb4b0f845c4d2b, type: 2}
-    RepeatAmount: 1
-    AmountsLeft: 1
+  - GameAction: {fileID: 11400000, guid: e8073849a72b11840a890af440292578, type: 2}
+    RepeatAmount: 5
+    AmountsLeft: 5
     Happened: 0
-  GUID: ddfe14a6-b129-48a9-a404-0e659ee6165a
-  Description: Go further into the woods
-  NextObjective: {fileID: 11400000, guid: b2f42154b39c12548ab0a93c4818a86b, type: 2}
+  GUID: 97c3089a-135d-465c-b73c-c6b5bff83058
+  Description: Destroy the bulldozers
+  NextObjective: {fileID: 11400000}

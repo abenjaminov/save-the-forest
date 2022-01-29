@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1130eca8d998410b97eab1b87f6a1949, type: 3}
-  m_Name: 6 - Go to level 3
+  m_Name: 9 - Go to level 5
   m_EditorClassIdentifier: 
   _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
@@ -22,5 +22,5 @@ MonoBehaviour:
     AmountsLeft: 1
     Happened: 0
   GUID: ddfe14a6-b129-48a9-a404-0e659ee6165a
-  Description: Go further into the woods
-  NextObjective: {fileID: 11400000, guid: b2f42154b39c12548ab0a93c4818a86b, type: 2}
+  Description: Get to the edge of the forest
+  NextObjective: {fileID: 11400000, guid: 1450b5474b886554bb3bf6490d8d6935, type: 2}

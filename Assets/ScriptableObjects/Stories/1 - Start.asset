@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Guid: 281d3aff-ee1d-4b1d-97ba-ad776090124c
   StoryParts:
-  - Hello i am minerva
-  - I want to save the forest
-  - Lets fucking go kill all fuck the forest employees
+  - 'Minerva: What a long meeting (Press Alt to continue)'
+  - "Minerva: I can\u2019t believe we\u2019re going to destroy the forest "
+  - Use the arrow keys to move and Alt to interact
