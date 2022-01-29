@@ -714,7 +714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1217856108193178920, guid: 4ccbbfb4f95edd941abc0eb1bb32af61, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.24459611
+      value: -0.24459615
       objectReference: {fileID: 0}
     - target: {fileID: 1217856108193178920, guid: 4ccbbfb4f95edd941abc0eb1bb32af61, type: 3}
       propertyPath: m_LocalRotation.z
@@ -742,7 +742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1217856109001872005, guid: 4ccbbfb4f95edd941abc0eb1bb32af61, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.24459611
+      value: -0.24459615
       objectReference: {fileID: 0}
     - target: {fileID: 1217856109001872005, guid: 4ccbbfb4f95edd941abc0eb1bb32af61, type: 3}
       propertyPath: m_LocalRotation.z
@@ -861,6 +861,10 @@ PrefabInstance:
     - target: {fileID: 2355814374763284150, guid: a1f242c34ae7cd1419c044ca191c8681, type: 3}
       propertyPath: m_Name
       value: bulldozer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3382416792009054628, guid: a1f242c34ae7cd1419c044ca191c8681, type: 3}
+      propertyPath: PatrolRoute.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3382416792009054628, guid: a1f242c34ae7cd1419c044ca191c8681, type: 3}
       propertyPath: PatrolRoute.Array.data[0]
