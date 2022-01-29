@@ -80,7 +80,7 @@ namespace _Scripts.Player.States
             _idleState = new PlayerIdleState(_animator, _playerMovement);
             _moveState = new PlayerMoveState(_animator, _playerMovement);
             _jumpState = new PlayerJumpState(_animator, _playerMovement);
-            _changeShapeState = new PlayerChangeShapeState(_animator, _PlayerVisuals);
+            _changeShapeState = new PlayerChangeShapeState(_animator, _PlayerVisuals, _playerMovement);
             _bearHandAttackState = new BearHandAttackState(_animator, attack1);
             _bearFrontState = new BearFrontAttackState(_animator, attack2);
 
@@ -129,6 +129,8 @@ namespace _Scripts.Player.States
 
             _StateMachine.AddTransition(_changeShapeState, shouldShapeShift, _idleState);
             _StateMachine.AddTransition(_changeShapeState, shouldShapeShift, _moveState);
+
+            _playerMovement.RefreshCharatercontroller(_PlayerVisuals.CurrentVisuals);
         }
 
         private void Update()
