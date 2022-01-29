@@ -16,6 +16,7 @@
             <e p="Location.cs" t="Include" />
             <e p="ObjectTransparencyHandler.cs" t="Include" />
             <e p="ReceiveBearAbilityLocation.cs" t="Include" />
+            <e p="ReceiveRabbitAbilityLocation.cs" t="Include" />
           </e>
           <e p="Combat.cs" t="Include" />
           <e p="DebugHelper.cs" t="Include" />

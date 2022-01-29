@@ -45,6 +45,7 @@ namespace _Scripts.Player
         private void Awake()
         {
             _GameChannel.OnReceiveBearAbilityEvent += OnReceiveBearAbilityEvent;
+            _GameChannel.OnReceiveRabbitAbilityEvent += OnReceiveRabbitAbilityEvent;
             ShapesMap.Add(PlayerShape.Human, HumanVisuals);
             ShapesMap.Add(PlayerShape.Bear, BearVisuals);
             ShapesMap.Add(PlayerShape.Rabbit, RabbitVisuals);
@@ -53,6 +54,11 @@ namespace _Scripts.Player
             _canChangeToBear = false;
             _canChangeToRabbit = false;
 
+        }
+
+        private void OnReceiveRabbitAbilityEvent()
+        {
+            _canChangeToRabbit = true;
         }
 
         private void OnReceiveBearAbilityEvent()

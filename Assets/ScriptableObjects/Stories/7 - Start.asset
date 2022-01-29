@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ef028ce231438b9dc2c162b91a1dff, type: 3}
-  m_Name: 3 - Arive at receive bear ability location action
+  m_Script: {fileID: 11500000, guid: f0105b58545f4aee886b393eda2cf462, type: 3}
+  m_Name: 7 - Start
   m_EditorClassIdentifier: 
-  Name: Receive bear ability
-  Hint: Interact with the light (Alt)
-  Guid: 5627a8d5-d2a0-47d9-99e6-7e1ffcec342a
+  Guid: 13e44695-c5c4-43c2-a367-990abe02c4b5
+  StoryParts:
+  - 'Minerva: Those bulldozers are destroying the forest!'

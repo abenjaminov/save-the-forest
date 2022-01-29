@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
-  StoryWhenActivated: {fileID: 0}
+  StoryWhenActivated: {fileID: 11400000, guid: 372d1d958ff45904ba39f4aeeacd2f28, type: 2}
   StoryWhenCompleted: {fileID: 0}
   ActionInfos:
   - GameAction: {fileID: 11400000, guid: e8073849a72b11840a890af440292578, type: 2}
@@ -23,4 +23,4 @@ MonoBehaviour:
     Happened: 0
   GUID: 97c3089a-135d-465c-b73c-c6b5bff83058
   Description: Destroy the bulldozers
-  NextObjective: {fileID: 11400000, guid: c15ac3fe2c711154d8239df0fcb65fcc, type: 2}
+  NextObjective: {fileID: 11400000, guid: 213908677e8cd074abbf241397c8ea1a, type: 2}
