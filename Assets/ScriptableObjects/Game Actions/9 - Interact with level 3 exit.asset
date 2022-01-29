@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63ef028ce231438b9dc2c162b91a1dff, type: 3}
-  m_Name: 3 - Arive at receive bear ability location action
+  m_Name: 9 - Interact with level 3 exit
   m_EditorClassIdentifier: 
-  Name: Receive bear ability
-  Hint: Interact with the light (Alt)
-  Guid: 5627a8d5-d2a0-47d9-99e6-7e1ffcec342a
+  Name: 
+  Hint: Go deeper in to the forest
+  Guid: d76c246e-cf1b-4645-afcc-3aa2e58d22c1

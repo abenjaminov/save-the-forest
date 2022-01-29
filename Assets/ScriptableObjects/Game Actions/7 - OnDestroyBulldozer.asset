@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0105b58545f4aee886b393eda2cf462, type: 3}
-  m_Name: 10 - End
+  m_Script: {fileID: 11500000, guid: 63ef028ce231438b9dc2c162b91a1dff, type: 3}
+  m_Name: 7 - OnDestroyBulldozer
   m_EditorClassIdentifier: 
-  Guid: fa495846-3323-4b0e-8329-2549e38c7b22
-  StoryParts:
-  - 'Voice: You did it! You saved the forest! '
-  - 'Press C to shapeshift into a rabbit '
+  Name: 
+  Hint: Destroy the bulldozers!
+  Guid: 18b4725c-a475-4c7c-97b9-1629658a2e64
