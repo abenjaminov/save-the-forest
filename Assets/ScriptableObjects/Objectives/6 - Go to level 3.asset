@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1130eca8d998410b97eab1b87f6a1949, type: 3}
-  m_Name: 3 - Check out bear paw
+  m_Name: 6 - Go to level 3
   m_EditorClassIdentifier: 
   _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
   StoryWhenActivated: {fileID: 0}
   StoryWhenCompleted: {fileID: 0}
   ActionInfos:
-  - GameAction: {fileID: 11400000, guid: ecf1663781af1ef4a88e6a5b1291bfd2, type: 2}
+  - GameAction: {fileID: 11400000, guid: 835bc77e67e661443acb4b0f845c4d2b, type: 2}
     RepeatAmount: 1
     AmountsLeft: 0
-    Happened: 1
-  GUID: 5ce574e9-ad63-430e-be98-ff66207cf55c
-  Description: Check out the bear paw
-  NextObjective: {fileID: 11400000, guid: f97742923622e9a4d839a670218c19ef, type: 2}
+    Happened: 0
+  GUID: ddfe14a6-b129-48a9-a404-0e659ee6165a
+  Description: Go to level 3
+  NextObjective: {fileID: 0}

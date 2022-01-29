@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63ef028ce231438b9dc2c162b91a1dff, type: 3}
-  m_Name: 4 - OnDestroyBarrel
+  m_Name: 6 - Interact with level 2 exit
   m_EditorClassIdentifier: 
-  Name: Destroy the barrels
-  Hint: Destroy the barrels (Shift \ Ctrl)
-  Guid: 6f5e34d1-de78-40cb-985c-4487e3a23322
+  Name: 
+  Hint: 
+  Guid: 

@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1130eca8d998410b97eab1b87f6a1949, type: 3}
-  m_Name: 4 - Destroy the barrels
+  m_Name: 4 - Destroy the trash
   m_EditorClassIdentifier: 
   _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
   StoryWhenActivated: {fileID: 0}
   StoryWhenCompleted: {fileID: 0}
   ActionInfos:
-  - GameAction: {fileID: 11400000, guid: e8073849a72b11840a890af440292578, type: 2}
-    RepeatAmount: 5
+  - GameAction: {fileID: 11400000, guid: b7467ddd14af58544844b448ccaf056d, type: 2}
+    RepeatAmount: 4
     AmountsLeft: 0
     Happened: 0
-  GUID: 97c3089a-135d-465c-b73c-c6b5bff83058
-  Description: Destroy the barrels
-  NextObjective: {fileID: 0}
+  GUID: 17296ea9-72d9-4478-9cb8-d9b166a39b66
+  Description: 
+  NextObjective: {fileID: 11400000, guid: a0c137951dd8267448ac668d5115c056, type: 2}

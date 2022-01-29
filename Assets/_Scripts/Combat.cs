@@ -31,7 +31,8 @@ public class Combat : MonoBehaviour
             Health h;
             if(c.TryGetComponent<Health>(out h) && (FilterTag == "" || c.tag != FilterTag))
             {
-                h.Hit(Damage);
+                if(h.enabled)
+                    h.Hit(Damage);
             }
         }
     }

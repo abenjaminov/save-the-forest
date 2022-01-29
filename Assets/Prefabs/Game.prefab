@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2523227680512064449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2523227680512064448}
+  - component: {fileID: 2523227680512064451}
+  - component: {fileID: 2523227680512064450}
+  - component: {fileID: 2523227680512064461}
+  - component: {fileID: 2523227680512064460}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2523227680512064448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523227680512064449}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2523227680512064451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523227680512064449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b234cd33162e4482b6cdfa311c5a644a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firstEdge: {fileID: 0}
+  _secondEdge: {fileID: 0}
+  _transparency: 0.5
+--- !u!114 &2523227680512064450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523227680512064449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4efd0c253d47778e8d727037237480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _PlayerChannel: {fileID: 11400000, guid: f4a4bd81ceed35a47964911f2ee707d5, type: 2}
+--- !u!114 &2523227680512064461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523227680512064449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fefbb0cb0b4961966031a320b5c35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
+  FirstObjective: {fileID: 11400000, guid: b33b5e67802029e439ea68205604fcba, type: 2}
+--- !u!114 &2523227680512064460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523227680512064449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b737b708bd4c7cbd8f75951f27de93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
+  _Player: {fileID: 0}
+  _SwitchLevelInfos:
+  - SwitchLevelAction: {fileID: 11400000, guid: 801d32a8c8a57e844acdc9b32c15d4b6, type: 2}
+    NewLocation: {fileID: 0}
+    OldLevel: {fileID: 0}
+    NewLevel: {fileID: 0}
+  - SwitchLevelAction: {fileID: 11400000, guid: 801d32a8c8a57e844acdc9b32c15d4b6, type: 2}
+    NewLocation: {fileID: 0}
+    OldLevel: {fileID: 0}
+    NewLevel: {fileID: 0}

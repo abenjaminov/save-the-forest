@@ -10,6 +10,7 @@
         <e p="_Scripts" t="Include">
           <e p="AnimatorController.cs" t="Include" />
           <e p="Behaviours" t="Include">
+            <e p="ActiveOnObjective.cs" t="Include" />
             <e p="DestroyableObject.cs" t="Include" />
             <e p="InputHandler.cs" t="Include" />
             <e p="Location.cs" t="Include" />

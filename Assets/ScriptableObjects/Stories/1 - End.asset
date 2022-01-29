@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0105b58545f4aee886b393eda2cf462, type: 3}
-  m_Name: End
+  m_Name: 1 - End
   m_EditorClassIdentifier: 
   Guid: fa495846-3323-4b0e-8329-2549e38c7b22
   StoryParts:

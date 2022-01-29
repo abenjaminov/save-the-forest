@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0105b58545f4aee886b393eda2cf462, type: 3}
-  m_Name: Start
+  m_Script: {fileID: 11500000, guid: 63ef028ce231438b9dc2c162b91a1dff, type: 3}
+  m_Name: 4 - OnDestroyTrash
   m_EditorClassIdentifier: 
-  Guid: 281d3aff-ee1d-4b1d-97ba-ad776090124c
-  StoryParts:
-  - Hello i am minerva
-  - I want to save the forest
-  - Lets fucking go kill all fuck the forest employees
+  Name: 
+  Hint: 
+  Guid: 
