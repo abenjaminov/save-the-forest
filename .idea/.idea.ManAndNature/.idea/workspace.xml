@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level 4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bulldozer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bulldozer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/10 - Go to level 5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/10 - Go to level 5.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/DestroyableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/DestroyableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +71,6 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/GameAction.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/Objective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/ObjectivesChannel.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/StoryItem.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/Input/Models/InputActionTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Input/InputManager.cs" />
@@ -96,6 +90,7 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/DestroyableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" />
       </list>
     </option>
   </component>
