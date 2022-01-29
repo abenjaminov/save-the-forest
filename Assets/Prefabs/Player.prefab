@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
+  _playerChannel: {fileID: 11400000, guid: f4a4bd81ceed35a47964911f2ee707d5, type: 2}
   _changeShapeEffect: {fileID: 7091313480989763541}
   HumanVisuals:
     Shape: 0
@@ -262,7 +263,9 @@ MonoBehaviour:
   AttackRadius: 1
   AttackInterval: 0
   FirstAttackDelay: 0.2
+  DirMultiplier: 0
   FilterTag: Player
+  ShowAttackOutline: 0
 --- !u!114 &4116340875165379292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,7 +298,9 @@ MonoBehaviour:
   AttackRadius: 5
   AttackInterval: 0
   FirstAttackDelay: 0.2
+  DirMultiplier: 0
   FilterTag: Player
+  ShowAttackOutline: 0
 --- !u!143 &6071922716842253322
 CharacterController:
   m_ObjectHideFlags: 0
