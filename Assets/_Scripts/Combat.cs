@@ -1,3 +1,5 @@
+using _Scripts;
+using Assets._Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +15,7 @@ public class Combat : MonoBehaviour
     public string FilterTag = "";
     bool showAttack = false;
     public bool ShowAttackOutline;
+    public float Knockback;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,7 @@ public class Combat : MonoBehaviour
 
     public void Attack()
     {
+        print("attack");
         Collider[] hits = Physics.OverlapSphere(transform.position + transform.forward * DirMultiplier
             , AttackRadius);
         showAttack = true;
@@ -52,10 +56,8 @@ public class Combat : MonoBehaviour
     }
     public void OnDrawGizmos()
     {
-        print("gizmos");
         if (showAttack && Application.isEditor && ShowAttackOutline)
         {
-            print("test");
             Gizmos.DrawSphere(transform.position
             + transform.forward * DirMultiplier, AttackRadius);
             showAttack = false;
