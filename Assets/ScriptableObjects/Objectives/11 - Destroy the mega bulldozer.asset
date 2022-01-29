@@ -19,9 +19,9 @@ MonoBehaviour:
   ActionInfos:
   - GameAction: {fileID: 11400000, guid: 95d787dbd751f45418fd0a580a1fad79, type: 2}
     RepeatAmount: 1
-    AmountsLeft: 0
-    Happened: 1
+    AmountsLeft: 1
+    Happened: 0
   GUID: 97c3089a-135d-465c-b73c-c6b5bff83058
   Description: Destroy the bulldozers
-  NextObjective: {fileID: 11400000}
+  NextObjective: {fileID: 0}
   State: 1

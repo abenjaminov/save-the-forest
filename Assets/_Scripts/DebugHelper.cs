@@ -15,6 +15,8 @@ namespace _Scripts
             HelperInstance = this;
         }
 
+        #if UNITY_EDITOR
+        
         [UnityEditor.MenuItem("Game Actions/Shape Shift/Human")]
         public static void ChangeToHuman()
         { 
@@ -32,5 +34,7 @@ namespace _Scripts
         { 
             HelperInstance._PlayerChannel.OnPlayerChangeShape(PlayerShape.Rabbit);
         }
+        
+        #endif
     }
 }

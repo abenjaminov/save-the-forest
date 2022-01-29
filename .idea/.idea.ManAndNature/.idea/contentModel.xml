@@ -154,6 +154,7 @@
             <e p="Readme Cartoon FX Remaster.txt" t="Include" />
           </e>
         </e>
+        <e p="MenuManager.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
