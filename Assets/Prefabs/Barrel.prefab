@@ -53,7 +53,8 @@ MonoBehaviour:
   OnDestroyedAction: {fileID: 11400000, guid: e8073849a72b11840a890af440292578, type: 2}
   _CombatChannel: {fileID: 11400000, guid: d08771600a20e2b4384b3354029a795a, type: 2}
   _healthComponent: {fileID: 5271904076171246939}
-  _DestroyedEffect: {fileID: 8213833628186058930}
+  _DestroyedEffects:
+  - {fileID: 8213833628186058930}
 --- !u!65 &3128509428319282657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99,6 +100,7 @@ MonoBehaviour:
   _componentsToActivate:
   - {fileID: 5271904076171246939}
   - {fileID: 1235210211179467742}
+  _gameObjectsToActivate: []
 --- !u!1 &8213833628186058928
 GameObject:
   m_ObjectHideFlags: 0

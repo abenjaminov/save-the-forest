@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using _Scripts.ScriptableObjects;
 using _Scripts.ScriptableObjects.Channels;
 using UnityEngine;
@@ -16,7 +18,7 @@ namespace _Scripts.Behaviours
         [SerializeField] private CombatChannel _CombatChannel;
         [SerializeField] private Health _healthComponent;
 
-        [SerializeField] private ParticleSystem _DestroyedEffect;
+        [SerializeField] private List<ParticleSystem> _DestroyedEffects;
         private Collider _collider;
         
         private void Awake()
@@ -38,10 +40,15 @@ namespace _Scripts.Behaviours
         {
             _collider.enabled = false;
             _Visuals.SetActive(false);
-            if (_DestroyedEffect != null)
+            if (_DestroyedEffects != null && _DestroyedEffects.Count > 0)
             {
-                _DestroyedEffect.Play(true);
-                yield return new WaitForSeconds(_DestroyedEffect.main.duration);
+                var duration = _DestroyedEffects.Max(x => x.main.duration);
+                foreach (var effect in _DestroyedEffects)
+                {
+                    effect.Play(true);    
+                }
+                
+                yield return new WaitForSeconds(duration);
             }
             
             Destroy(gameObject);

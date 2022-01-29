@@ -17,10 +17,11 @@ MonoBehaviour:
   StoryWhenActivated: {fileID: 0}
   StoryWhenCompleted: {fileID: 0}
   ActionInfos:
-  - GameAction: {fileID: 11400000, guid: 835bc77e67e661443acb4b0f845c4d2b, type: 2}
+  - GameAction: {fileID: 11400000, guid: 842ae3fed8e5211458ecf4bf2353a001, type: 2}
     RepeatAmount: 1
     AmountsLeft: 1
     Happened: 0
   GUID: ddfe14a6-b129-48a9-a404-0e659ee6165a
   Description: Get to the edge of the forest
   NextObjective: {fileID: 11400000, guid: 1450b5474b886554bb3bf6490d8d6935, type: 2}
+  State: 1
