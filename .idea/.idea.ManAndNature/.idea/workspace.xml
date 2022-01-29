@@ -20,7 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ReceiveRabbitAbilityLocation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ReceiveRabbitAbilityLocation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Game Actions/3 - Arive at receive bear ability location action.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Game Actions/3 - Arive at receive bear ability location action.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Game Actions/4 - OnDestroyTrash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Game Actions/4 - OnDestroyTrash.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Game Actions/5 - OnDestroyBarrel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Game Actions/5 - OnDestroyBarrel.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/10 - Destroy the mega bulldozer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/10 - Destroy the mega bulldozer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/3 - Check out bear paw.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/3 - Check out bear paw.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/4 - Destroy the trash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/4 - Destroy the trash.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/5 - Destroy the barrels.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/5 - Destroy the barrels.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/7 - Destroy the bulldozers.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/7 - Destroy the bulldozers.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/8 - Go to level 4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/8 - Go to level 4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/9 - Go to level 5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Objectives/9 - Go to level 5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Stories/10 - End.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Stories/10 - End.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Stories/2 - End.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Stories/2 - End.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Stories/2 - Start.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Stories/2 - Start.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Stories/8 - Start.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Stories/8 - Start.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/GameChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/GameChannel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,14 +106,15 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/UI/HintPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/GameChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ReceiveBearAbilityLocation.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/DestroyableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ActiveOnObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Combat.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Channels/GameChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ReceiveRabbitAbilityLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" />
       </list>
     </option>
   </component>
@@ -246,11 +274,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643387015801" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1643452318025">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1643455452219">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1282" y="28" width="882" height="1008" key="search.everywhere.popup/0.0.1280.680/-1680.27.1680.1010@-1680.27.1680.1010" timestamp="1643397810877" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643452318025" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643455452219" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

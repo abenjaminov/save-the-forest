@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 4 - OnDestroyTrash
   m_EditorClassIdentifier: 
   Name: 
-  Hint: 
-  Guid: 
+  Hint: Destroy the trash
+  Guid: d63ab6e3-ce46-4153-9642-56eb77409b77
