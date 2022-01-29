@@ -31,6 +31,8 @@ namespace _Scripts.UI
 
         private void OnShowHintEvent(Hint arg0)
         {
+            if (ActiveHints.Any(x => x.HintGuid == arg0.HintGuid)) return;
+                
             ActiveHints.Add(arg0);
 
             UpdateUI();
