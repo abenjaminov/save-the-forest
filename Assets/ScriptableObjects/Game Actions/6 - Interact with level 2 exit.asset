@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ef028ce231438b9dc2c162b91a1dff, type: 3}
   m_Name: 6 - Interact with level 2 exit
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Interact with level 2 exit
   Hint: 
-  Guid: 
+  Guid: d454b692-affc-40e0-9a98-2f78b359b6c8

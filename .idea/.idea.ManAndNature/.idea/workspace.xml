@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,9 +84,9 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerVisuals.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/DestroyableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Combat.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ActiveOnObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/Location.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Combat.cs" />
       </list>
     </option>
   </component>
@@ -240,10 +238,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="VCS.FileHistoryDialog/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643392406991" />
-    <state x="297" y="73" width="687" height="534" key="find.popup" timestamp="1643404210820">
+    <state x="297" y="73" width="687" height="534" key="find.popup" timestamp="1643453453990">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="73" width="687" height="534" key="find.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643404210820" />
+    <state x="297" y="73" width="687" height="534" key="find.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643453453990" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1643387015801">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
