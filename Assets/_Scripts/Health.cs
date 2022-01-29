@@ -33,19 +33,26 @@ public class Health : MonoBehaviour
         
     }
 
+    [ContextMenu("Die")]
+    private void Die()
+    {
+        Hit(HP);
+    }
+    
     public float Hit(float damage)
     {
-        if (!invincible)
-        {
-            HP -= damage;
-            if (HP <= 0)
-            {
-                OnDeath();
-                HP = 0;
-            }
-        }
-        else damage = 0;
+        damage = invincible ? 0 : damage;
+        
+        HP -= damage;
+        
         _combatChannel.OnHit(new HitObject(this, damage));
+        
+        if (HP <= 0)
+        {
+            HP = 0;
+            OnDeath();
+        }
+        
         return HP;
     }
 

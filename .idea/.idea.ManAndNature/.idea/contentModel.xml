@@ -85,6 +85,7 @@
           </e>
           <e p="UI" t="Include">
             <e p="CharacterIcon.cs" t="Include" />
+            <e p="HealthPanel.cs" t="Include" />
             <e p="HintPanel.cs" t="Include" />
             <e p="Models" t="Include">
               <e p="Hint.cs" t="Include" />
