@@ -1110,6 +1110,10 @@ PrefabInstance:
       propertyPath: _SwitchLevelInfos.Array.data[3].SwitchLevelAction
       value: 
       objectReference: {fileID: 11400000, guid: 842ae3fed8e5211458ecf4bf2353a001, type: 2}
+    - target: {fileID: 6616420028099305698, guid: e38c4a177c6076341a9649724b3d69a6, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 871af10bbaec5a143af6e636377bcfd6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e38c4a177c6076341a9649724b3d69a6, type: 3}
 --- !u!1001 &3700661684253469650

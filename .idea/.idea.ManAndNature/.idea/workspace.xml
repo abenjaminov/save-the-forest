@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940e24e-ce9a-4e45-9c27-907371e8b453" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManAndNature/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +89,10 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/Enemy/States/EnemyStates.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/Objectives/ActionObjective.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/ActiveOnObjective.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Behaviours/DestroyableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/DebugHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" />
       </list>
     </option>
   </component>
@@ -108,6 +110,14 @@
     <property name="XThreadsFramesViewSplitterKey" value="0.5011876" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../MN\ManAndNature.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Centrical\MN" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="24996">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -250,24 +260,24 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643387015801" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1643463545079">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1643466364471">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1282" y="28" width="882" height="1008" key="search.everywhere.popup/0.0.1280.680/-1680.27.1680.1010@-1680.27.1680.1010" timestamp="1643397810877" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643463545079" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1680.27.1680.1010@0.0.1280.680" timestamp="1643466364471" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs</url>
-          <line>39</line>
+          <line>40</line>
           <properties documentPath="C:\Users\Centrical\ManAndNature\Assets\_Scripts\LevelManager.cs" initialLine="39">
             <startOffsets>
-              <option value="1126" />
+              <option value="1186" />
             </startOffsets>
             <endOffsets>
-              <option value="1200" />
+              <option value="1260" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="42" />

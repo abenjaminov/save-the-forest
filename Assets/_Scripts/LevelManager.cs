@@ -24,6 +24,7 @@ namespace _Scripts
         [SerializeField] private CombatChannel _CombatChannel;
         [SerializeField] private GameObject _Player;
         [SerializeField] private List<SwitchLevelInfo> _SwitchLevelInfos;
+        [SerializeField] private GameAction _EndGameAction;
 
         private SwitchLevelInfo _currentSwitchLevelInfo;
         
@@ -45,14 +46,27 @@ namespace _Scripts
 
         private void OnActionEvent(GameAction arg0)
         {
-            var switchLevelInfo = _SwitchLevelInfos.FirstOrDefault(x => x.SwitchLevelAction.Guid == arg0.Guid);
+            if (arg0.Guid == _EndGameAction.Guid)
+            {
+                StartCoroutine(nameof(EndGame));
+            }
+            else
+            {
+                var switchLevelInfo = _SwitchLevelInfos.FirstOrDefault(x => x.SwitchLevelAction.Guid == arg0.Guid);
             
-            if (switchLevelInfo == null) return;
+                if (switchLevelInfo == null) return;
 
-            _currentSwitchLevelInfo = switchLevelInfo;
-            StartCoroutine(SwitchLevel(switchLevelInfo));
+                _currentSwitchLevelInfo = switchLevelInfo;
+                StartCoroutine(SwitchLevel(switchLevelInfo));    
+            }
         }
 
+        IEnumerator EndGame()
+        {
+            yield return new WaitForSeconds(4);
+            SceneManager.LoadScene("MainMenu");
+        }
+        
         IEnumerator SwitchLevel(SwitchLevelInfo switchLevelInfo)
         {
             switchLevelInfo.NewLevel.SetActive(true);
