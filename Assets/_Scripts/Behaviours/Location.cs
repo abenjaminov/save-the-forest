@@ -34,7 +34,9 @@ namespace _Scripts.Behaviours
             if (!other.CompareTag("Player")) return;
 
             _PlayerChannel.OnPlayerInteractEvent += OnPlayerInteractEvent;
-            _GameChannel.OnAction(_arriveAtLocationAction);
+            
+            if(_arriveAtLocationAction != null)
+                _GameChannel.OnAction(_arriveAtLocationAction);
         }
 
         private void OnDisable()

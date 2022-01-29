@@ -7,6 +7,7 @@ public class EnemyAttackState : StateBase
 {
     private Combat _Combat;
     EnemyMovement _EnemyMovement;
+    Transform target;
 
     public EnemyAttackState(AnimatorController animator, EnemyMovement enemyMovement, Combat combat) : base(animator)
     {
@@ -28,6 +29,7 @@ public class EnemyAttackState : StateBase
 
     public override void Tick()
     {
+        _EnemyMovement.LookAt(_EnemyMovement.Target);
     }
 
     public override void OnExit()

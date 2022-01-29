@@ -517,7 +517,7 @@ Transform:
   m_GameObject: {fileID: 2355814374763284150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.27, y: 0, z: -15.61}
-  m_LocalScale: {x: 0.55196786, y: 0.55196786, z: 0.55196786}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 2355814374762994324}
   - {fileID: 2355814374762994322}
@@ -640,10 +640,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6377c542cf2ec0a42a8ce9fcbc0efa7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackName: Attack
   Damage: 1
   AttackRadius: 1.5
   AttackInterval: 0.8
   FirstAttackDelay: 0.4
+  offset: {x: 0, y: 0, z: 2}
   FilterTag: Enemy
 --- !u!1 &2355814374763284152
 GameObject:
