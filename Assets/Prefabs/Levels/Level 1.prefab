@@ -438,11 +438,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8761f67974413398ba0010d368116d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _UIChannel: {fileID: 0}
-  _PlayerChannel: {fileID: 0}
-  _GameChannel: {fileID: 0}
-  _arriveAtLocationAction: {fileID: 0}
-  _interactAction: {fileID: 0}
+  _UIChannel: {fileID: 11400000, guid: adc585ecbc2271847bba1d100c03514b, type: 2}
+  _PlayerChannel: {fileID: 11400000, guid: f4a4bd81ceed35a47964911f2ee707d5, type: 2}
+  _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
+  _arriveAtLocationAction: {fileID: 11400000, guid: fa11d0d15c0bb0c4598c795269460f3c, type: 2}
+  _interactAction: {fileID: 11400000, guid: 801d32a8c8a57e844acdc9b32c15d4b6, type: 2}
 --- !u!1 &8151846837817391932
 GameObject:
   m_ObjectHideFlags: 0

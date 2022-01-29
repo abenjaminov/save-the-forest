@@ -36,5 +36,10 @@ namespace _Scripts.Behaviours
             _PlayerChannel.OnPlayerInteractEvent += OnPlayerInteractEvent;
             _GameChannel.OnAction(_arriveAtLocationAction);
         }
+
+        private void OnDisable()
+        {
+            _PlayerChannel.OnPlayerInteractEvent -= OnPlayerInteractEvent;
+        }
     }
 }
