@@ -7,13 +7,15 @@ namespace _Scripts.Player.States
     {
         private PlayerVisuals _PlayerVisuals;
         private PlayerMovement _playerMovment;
+        private PlayerAudio _playerAudio;
         public PlayerShape Shape;
         private static readonly int s_Shape = Animator.StringToHash("Shape");
 
-        public PlayerChangeShapeState(AnimatorController animator, PlayerVisuals playerVisuals, PlayerMovement playerMovement) : base(animator)
+        public PlayerChangeShapeState(AnimatorController animator, PlayerVisuals playerVisuals, PlayerMovement playerMovement, PlayerAudio playerAudio) : base(animator)
         {
             _PlayerVisuals = playerVisuals;
             _playerMovment = playerMovement;
+            _playerAudio = playerAudio;
             Shape = _PlayerVisuals.CurrentShape;
         }
 
@@ -34,6 +36,7 @@ namespace _Scripts.Player.States
 
         public override void OnExit()
         {
+            _playerAudio.PlayShiftEffect();
             _animator.Refresh();
             _playerMovment.RefreshCharatercontroller(_PlayerVisuals.CurrentVisuals);
 
