@@ -14,6 +14,12 @@ namespace _Scripts.Input
 
         private PlayerInput _PlayerInput;
 
+        private void OnDestroy()
+        {
+            _GameChannel.OnShowStoryEvent -= OnShowStoryEvent;
+            _GameChannel.OnStoryToldEvent -= OnStoryToldEvent;
+        }
+
         private void Awake()
         {
             _GameChannel.OnShowStoryEvent += OnShowStoryEvent;
