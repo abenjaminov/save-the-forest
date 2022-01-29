@@ -4,6 +4,7 @@ using State;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using _Scripts.Player.States;
 using UnityEngine;
 
 public class EnemyStates : MonoBehaviour
@@ -22,7 +23,7 @@ public class EnemyStates : MonoBehaviour
     private AnimatorController _animator;
     private Combat _combat;
 
-    public Transform Player;
+    private Transform Player;
 
     private void Awake()
     {
@@ -30,6 +31,7 @@ public class EnemyStates : MonoBehaviour
         _EnemyMovement = GetComponent<EnemyMovement>();
         _animator = GetComponent<AnimatorController>();
         _combat = GetComponent<Combat>();
+        Player = FindObjectOfType<PlayerStates>().transform;
     }
 
     private void Start()

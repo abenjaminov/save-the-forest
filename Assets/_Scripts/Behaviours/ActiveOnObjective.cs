@@ -24,7 +24,7 @@ namespace _Scripts.Behaviours
             _ObjectivesChannel.OnObjectiveActiveEvent += OnObjectiveActiveEvent;
             _ObjectivesChannel.OnObjectiveCompleteEvent += OnObjectiveCompleteEvent;
             
-            ToggleActive(false);
+            ToggleActive(_Objective.State == ObjectiveState.Active);
         }
 
         void ToggleActive(bool isActive)

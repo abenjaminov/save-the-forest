@@ -25,7 +25,7 @@ namespace _Scripts.ScriptableObjects.Objectives
         
         public string Description;
         public ActionObjective NextObjective;
-        protected ObjectiveState State;
+        public ObjectiveState State;
 
         
         private void OnDisable()
