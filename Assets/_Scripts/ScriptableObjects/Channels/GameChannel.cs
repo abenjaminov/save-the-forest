@@ -10,7 +10,13 @@ namespace _Scripts.ScriptableObjects.Channels
         public UnityAction<GameAction> OnActionEvent;
         public UnityAction<StoryItem> OnShowStoryEvent;
         public UnityAction<StoryItem> OnStoryToldEvent;
+        public UnityAction OnReceiveBearAbilityEvent;
 
+        public void OnReceiveBearAbility()
+        {
+            OnReceiveBearAbilityEvent?.Invoke();
+        }
+        
         public void OnStoryTold(StoryItem storyItem)
         {
             OnStoryToldEvent?.Invoke(storyItem);

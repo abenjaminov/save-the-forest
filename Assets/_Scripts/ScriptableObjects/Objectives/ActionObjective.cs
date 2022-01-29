@@ -40,6 +40,7 @@ namespace _Scripts.ScriptableObjects.Objectives
             foreach (var actionInfo in ActionInfos)
             {
                 actionInfo.Happened = false;
+                actionInfo.AmountsLeft = actionInfo.RepeatAmount;
             }
         }
 
@@ -68,7 +69,12 @@ namespace _Scripts.ScriptableObjects.Objectives
 
             if (actionInfo == null) return;
 
-            actionInfo.Happened = true;
+            actionInfo.AmountsLeft--;
+
+            if (actionInfo.AmountsLeft == 0)
+            {
+                actionInfo.Happened = true;    
+            }
 
             _ObjectivesChannel.OnObjectiveProgress(this);
             

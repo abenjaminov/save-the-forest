@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _GameChannel: {fileID: 11400000, guid: 25f168db18c2d4849bbc60ef0ebfb5b2, type: 2}
   _ObjectivesChannel: {fileID: 11400000, guid: c8bb259b88ed1e146ae6ee9678a5362e, type: 2}
+  StoryWhenActivated: {fileID: 0}
+  StoryWhenCompleted: {fileID: 0}
   ActionInfos:
   - GameAction: {fileID: 11400000, guid: 801d32a8c8a57e844acdc9b32c15d4b6, type: 2}
-    Happened: 1
+    RepeatAmount: 1
+    AmountsLeft: 1
+    Happened: 0
   GUID: 6c0ecf63-f724-407f-b863-09cf852b391e
   Description: Exit the office (Alt)
-  NextObjective: {fileID: 0}
+  NextObjective: {fileID: 11400000, guid: 5b4355877c15ef94fb23f26c273b037d, type: 2}

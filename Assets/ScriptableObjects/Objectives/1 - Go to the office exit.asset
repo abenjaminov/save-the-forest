@@ -18,6 +18,8 @@ MonoBehaviour:
   StoryWhenCompleted: {fileID: 11400000, guid: ac1b89699801bdb45b8a705d7c9385df, type: 2}
   ActionInfos:
   - GameAction: {fileID: 11400000, guid: fa11d0d15c0bb0c4598c795269460f3c, type: 2}
+    RepeatAmount: 1
+    AmountsLeft: 0
     Happened: 0
   GUID: 4353c7b9-b516-4d05-8daa-cce9656e5db0
   Description: Go to the office exit
