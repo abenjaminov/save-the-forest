@@ -24,6 +24,7 @@ namespace _Scripts.Player.States
         private PlayerMovement _playerMovement;
         private PlayerVisuals _PlayerVisuals;
         private AnimatorController _animator;
+        private PlayerAudio _playerAudio;
         private Combat attack1;
         private Combat attack2;
         private bool _isJumpPressed;
@@ -36,7 +37,8 @@ namespace _Scripts.Player.States
             _playerMovement = GetComponent<PlayerMovement>();
             _animator = GetComponent<AnimatorController>();
             _PlayerVisuals = GetComponent<PlayerVisuals>();
-			
+            _playerAudio = GetComponent<PlayerAudio>();
+
             var attacks = GetComponents<Combat>();
             attack1 = attacks[0];
             attack2 = attacks[1];
@@ -80,7 +82,7 @@ namespace _Scripts.Player.States
             _idleState = new PlayerIdleState(_animator, _playerMovement);
             _moveState = new PlayerMoveState(_animator, _playerMovement);
             _jumpState = new PlayerJumpState(_animator, _playerMovement);
-            _changeShapeState = new PlayerChangeShapeState(_animator, _PlayerVisuals, _playerMovement);
+            _changeShapeState = new PlayerChangeShapeState(_animator, _PlayerVisuals, _playerMovement, _playerAudio);
             _bearHandAttackState = new BearHandAttackState(_animator, attack1);
             _bearFrontState = new BearFrontAttackState(_animator, attack2);
 
